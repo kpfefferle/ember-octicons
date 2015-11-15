@@ -1,9 +1,5 @@
 module.exports = {
-  normalizeEntityName: function() {
-    // this prevents an error when the entityName is
-    // not specified (since that doesn't actually matter
-    // to us
-  },
+  normalizeEntityName: function() {}, // no-op since we're just adding dependencies
 
   afterInstall: function(options) {
     return this.addBowerPackageToProject('octicons', '3.3.0');
