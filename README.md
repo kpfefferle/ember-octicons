@@ -1,4 +1,4 @@
-# ember-cli-octicons
+# ember-cli-octicons [![Build Status](https://travis-ci.org/kpfefferle/ember-cli-octicons.svg?branch=master)](https://travis-ci.org/kpfefferle/ember-cli-octicons)
 
 Includes GitHub Octicons in an ember-cli app.
 
