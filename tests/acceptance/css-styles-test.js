@@ -7,6 +7,6 @@ test('check that Octicons scss is being applied', function(assert) {
   visit('/');
 
   andThen(function() {
-    assert.equal($('.octicon').css('display'), 'inline-block');
+    assert.equal($('span.octicon').css('display'), 'inline-block');
   });
 });
