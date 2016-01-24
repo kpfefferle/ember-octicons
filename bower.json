@@ -10,7 +10,7 @@
     "loader.js": "^3.5.0"
   },
   "devDependencies": {
-    "octicons": "~3.3.0"
+    "octicons": "3.4.1"
   },
   "resolutions": {
     "ember": "2.3.0"
