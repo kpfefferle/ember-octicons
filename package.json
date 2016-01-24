@@ -11,7 +11,10 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/kpfefferle/ember-cli-octicons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpfefferle/ember-cli-octicons"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
