@@ -1,16 +1,12 @@
 {
   "name": "ember-cli-octicons",
   "dependencies": {
-    "ember": "2.3.1",
+    "ember": "~2.3.1",
     "ember-cli-shims": "0.1.0",
     "ember-cli-test-loader": "0.2.2",
-    "ember-qunit-notifications": "0.1.0",
-    "jquery": "1.11.3"
+    "ember-qunit-notifications": "0.1.0"
   },
   "devDependencies": {
     "octicons": "3.4.1"
-  },
-  "resolutions": {
-    "ember": "2.3.1"
   }
 }
