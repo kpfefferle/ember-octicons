@@ -7,6 +7,6 @@
     "ember-qunit-notifications": "0.1.0"
   },
   "devDependencies": {
-    "octicons": "3.4.1"
+    "octicons": "3.5.0"
   }
 }
