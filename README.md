@@ -24,4 +24,4 @@ ember install ember-cli-octicons
 * `ember test`
 * `ember test --server`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
