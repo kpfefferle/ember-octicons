@@ -1,6 +1,8 @@
-# ember-cli-octicons [![Build Status](https://travis-ci.org/kpfefferle/ember-cli-octicons.svg?branch=master)](https://travis-ci.org/kpfefferle/ember-cli-octicons)
+# ember-cli-octicons
+[![Build Status](https://travis-ci.org/kpfefferle/ember-cli-octicons.svg?branch=master)](https://travis-ci.org/kpfefferle/ember-cli-octicons)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-deploy-cloudfront.svg)](https://emberobserver.com/addons/ember-cli-deploy-cloudfront)
 
-Includes [GitHub Octicons](https://octicons.github.com/) in an ember-cli app.
+Easily add [GitHub Octicons](https://octicons.github.com/) to an Ember application.
 
 When the addon is installed, it will add `octicons` as a Bower dependency, import the Octicons CSS into the vendor CSS package, and import the Octicons font files into the build assets.
 
