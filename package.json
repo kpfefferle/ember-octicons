@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-octicons",
   "version": "0.3.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Easily add GitHub Octicons to your Ember project.",
   "directories": {
     "doc": "doc",
     "test": "tests"
