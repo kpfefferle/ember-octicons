@@ -16,13 +16,14 @@ ember install ember-cli-octicons
 
 ## Developing
 
-* `git clone` this repository
+* `git clone https://github.com/kpfefferle/ember-cli-octicons.git` this repository
+* `cd ember-cli-octicons`
 * `npm install`
 * `bower install`
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
