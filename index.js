@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-octicons',
+  name: 'ember-octicons',
 
   included: function(app) {
     this._super.included(app);
