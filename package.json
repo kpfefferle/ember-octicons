@@ -1,6 +1,6 @@
 {
   "name": "ember-octicons",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Easily add GitHub Octicons to your Ember project.",
   "directories": {
     "doc": "doc",
