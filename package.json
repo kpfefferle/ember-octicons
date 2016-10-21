@@ -11,12 +11,9 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kpfefferle/ember-octicons"
-  },
+  "repository": "https://github.com/kpfefferle/ember-octicons",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.12.0"
   },
   "author": "Kevin Pfefferle",
   "license": "MIT",
