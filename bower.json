@@ -2,7 +2,7 @@
   "name": "ember-octicons",
   "dependencies": {
     "ember": "~2.9.0",
-    "ember-cli-shims": "0.1.1"
+    "ember-cli-shims": "0.1.3"
   },
   "devDependencies": {
     "octicons": "4.3.0"
