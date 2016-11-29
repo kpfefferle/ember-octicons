@@ -2,21 +2,29 @@
   "name": "ember-octicons",
   "version": "0.7.0",
   "description": "Easily add GitHub Octicons to your Ember project.",
+  "keywords": [
+    "ember-addon",
+    "octicons",
+    "icons"
+  ],
+  "license": "MIT",
+  "author": "Kevin Pfefferle",
   "directories": {
     "doc": "doc",
     "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpfefferle/ember-octicons.git"
   },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "https://github.com/kpfefferle/ember-octicons",
-  "engines": {
-    "node": ">= 0.12.0"
+  "dependencies": {
+    "ember-cli-babel": "^5.1.10"
   },
-  "author": "Kevin Pfefferle",
-  "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.5.0",
     "ember-ajax": "^2.5.2",
@@ -32,20 +40,15 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "^2.9.0",
+    "ember-data": "^2.10.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.1.1",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.1.0",
     "loader.js": "^4.0.11"
   },
-  "keywords": [
-    "ember-addon",
-    "octicons",
-    "icons"
-  ],
-  "dependencies": {
-    "ember-cli-babel": "^5.1.10"
+  "engines": {
+    "node": ">= 0.12.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
