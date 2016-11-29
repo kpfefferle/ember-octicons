@@ -18,7 +18,7 @@ ember install ember-octicons
 
 * `git clone https://github.com/kpfefferle/ember-octicons.git` this repository
 * `cd ember-octicons`
-* `yarn install` (if you don't have Yarn, `npm install -g yarn`)
+* `yarn`
 * `bower install`
 
 ## Running Tests
@@ -27,4 +27,4 @@ ember install ember-octicons
 * `ember test`
 * `ember test --server`
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
