@@ -3798,9 +3798,9 @@ livereload-js@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/livereload-js/-/livereload-js-2.2.2.tgz#6c87257e648ab475bc24ea257457edcc1f8d0bc2"
 
-loader.js@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/loader.js/-/loader.js-4.3.0.tgz#736c13eb8afdf75abd6c2d7b4f7fd40e1105a71f"
+loader.js@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/loader.js/-/loader.js-4.4.0.tgz#02bf55650b78afee5e9d8cf972efd484faa3b2c1"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -5439,13 +5439,13 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-silent-error@^1.0.0, silent-error@^1.0.1:
+silent-error@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/silent-error/-/silent-error-1.0.1.tgz#71b7d503d1c6f94882b51b56be879b113cb4822c"
   dependencies:
     debug "^2.2.0"
 
-silent-error@^1.1.0:
+silent-error@^1.0.1, silent-error@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/silent-error/-/silent-error-1.1.0.tgz#2209706f1c850a9f1d10d0d840918b46f26e1bc9"
   dependencies:
