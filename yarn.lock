@@ -2,88 +2,15 @@
 # yarn lockfile v1
 
 
-"@glimmer/compiler@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.25.4.tgz#349791f826de0be271fdfa88e3bac395dcb94ee9"
-  dependencies:
-    "@glimmer/interfaces" "^0.25.4"
-    "@glimmer/syntax" "^0.25.4"
-    "@glimmer/util" "^0.25.4"
-    "@glimmer/wire-format" "^0.25.4"
-    simple-html-tokenizer "^0.3.0"
-
 "@glimmer/di@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.2.0.tgz#73bfd4a6ee4148a80bf092e8a5d29bcac9d4ce7e"
-
-"@glimmer/interfaces@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.25.4.tgz#b0930ed36bebd89718bb0aa0d8d94f0434b3a876"
-  dependencies:
-    "@glimmer/wire-format" "^0.25.4"
-
-"@glimmer/node@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/node/-/node-0.25.4.tgz#a3227f0946622422093a07f9c517c87293d188b5"
-  dependencies:
-    "@glimmer/runtime" "^0.25.4"
-    simple-dom "^0.3.0"
-
-"@glimmer/object-reference@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/object-reference/-/object-reference-0.25.4.tgz#531b5cb2f183ac1c78a02da8eaf55e8d3dd50429"
-  dependencies:
-    "@glimmer/reference" "^0.25.4"
-    "@glimmer/util" "^0.25.4"
-
-"@glimmer/object@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/object/-/object-0.25.4.tgz#fd4141788f22f9898861ecfa0b03f4f5d4c266d4"
-  dependencies:
-    "@glimmer/object-reference" "^0.25.4"
-    "@glimmer/util" "^0.25.4"
-
-"@glimmer/reference@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.25.4.tgz#f5a9c19ccbc41c5ef3311bf69f42b1a095f069bd"
-  dependencies:
-    "@glimmer/util" "^0.25.4"
 
 "@glimmer/resolver@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@glimmer/resolver/-/resolver-0.4.1.tgz#cd9644572c556e7e799de1cf8eff2b999cf5b878"
   dependencies:
     "@glimmer/di" "^0.2.0"
-
-"@glimmer/runtime@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/runtime/-/runtime-0.25.4.tgz#0b82f5b49108b3fbdeb271d2185a77ee04110396"
-  dependencies:
-    "@glimmer/interfaces" "^0.25.4"
-    "@glimmer/object" "^0.25.4"
-    "@glimmer/object-reference" "^0.25.4"
-    "@glimmer/reference" "^0.25.4"
-    "@glimmer/util" "^0.25.4"
-    "@glimmer/wire-format" "^0.25.4"
-
-"@glimmer/syntax@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.25.4.tgz#ee82a15be70d2ff34ceba5c9806ee9d90f7b1c54"
-  dependencies:
-    "@glimmer/interfaces" "^0.25.4"
-    "@glimmer/util" "^0.25.4"
-    handlebars "^4.0.6"
-    simple-html-tokenizer "^0.3.0"
-
-"@glimmer/util@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.25.4.tgz#33638299d3180b326e26f60059186be4fe7dcb1c"
-
-"@glimmer/wire-format@^0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.25.4.tgz#520981babea4b419409618ea4caf25aba866c317"
-  dependencies:
-    "@glimmer/util" "^0.25.4"
 
 abbrev@1:
   version "1.1.0"
@@ -2250,14 +2177,10 @@ ember-router-generator@^1.0.0, ember-router-generator@^1.2.3:
   dependencies:
     recast "^0.11.3"
 
-ember-source@~2.16.1:
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-2.16.1.tgz#fed872aa46f6af29efb3c5461e9adc29a57dc6da"
+ember-source@~2.16.2:
+  version "2.16.2"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-2.16.2.tgz#ebc29ce36dec3ecc80f6b1b02218d63ca5041088"
   dependencies:
-    "@glimmer/compiler" "^0.25.4"
-    "@glimmer/node" "^0.25.4"
-    "@glimmer/reference" "^0.25.4"
-    "@glimmer/runtime" "^0.25.4"
     broccoli-funnel "^1.2.0"
     broccoli-merge-trees "^2.0.0"
     ember-cli-get-component-path-option "^1.0.0"
@@ -2273,9 +2196,6 @@ ember-source@~2.16.1:
     inflection "^1.12.0"
     jquery "^3.2.1"
     resolve "^1.3.3"
-    rsvp "^3.6.1"
-    simple-dom "^0.3.0"
-    simple-html-tokenizer "^0.4.1"
 
 ember-test-helpers@^0.6.3:
   version "0.6.3"
@@ -3058,7 +2978,7 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
-handlebars@^4.0.4, handlebars@^4.0.6:
+handlebars@^4.0.4:
   version "4.0.10"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.10.tgz#3d30c718b09a3d96f23ea4cc1f403c4d3ba9ff4f"
   dependencies:
@@ -5279,7 +5199,7 @@ rimraf@~2.5.0:
   dependencies:
     glob "^7.0.5"
 
-rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.1.0, rsvp@^3.2.1, rsvp@^3.3.3, rsvp@^3.5.0, rsvp@^3.6.0, rsvp@^3.6.1:
+rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.1.0, rsvp@^3.2.1, rsvp@^3.3.3, rsvp@^3.5.0, rsvp@^3.6.0:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
 
@@ -5412,18 +5332,6 @@ silent-error@^1.0.0, silent-error@^1.0.1, silent-error@^1.1.0:
   resolved "https://registry.yarnpkg.com/silent-error/-/silent-error-1.1.0.tgz#2209706f1c850a9f1d10d0d840918b46f26e1bc9"
   dependencies:
     debug "^2.2.0"
-
-simple-dom@^0.3.0:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/simple-dom/-/simple-dom-0.3.2.tgz#0663d10f1556f1500551d518f56e3aba0871371d"
-
-simple-html-tokenizer@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.3.0.tgz#9b8b5559d80e331a544dd13dd59382e5d0d94411"
-
-simple-html-tokenizer@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.4.1.tgz#028988bb7fe8b2e6645676d82052587d440b02d3"
 
 slash@^1.0.0:
   version "1.0.0"
