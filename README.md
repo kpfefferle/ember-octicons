@@ -4,7 +4,7 @@
 
 Easily add [GitHub Octicons](https://octicons.github.com/) to an Ember application.
 
-When the addon is installed, it will add `octicons` as a Bower dependency, import the Octicons CSS into the vendor CSS package, and import the Octicons font files into the build assets.
+When the addon is installed, it will use `octicons` as an NPM dependency, import the Octicons CSS into the vendor CSS package, and import the Octicons font files into the build assets.
 
 ## Usage
 
@@ -19,7 +19,6 @@ ember install ember-octicons
 * `git clone https://github.com/kpfefferle/ember-octicons.git` this repository
 * `cd ember-octicons`
 * `yarn`
-* `bower install`
 
 ## Running Tests
 
