@@ -1,7 +1,0 @@
-{
-  "name": "ember-octicons",
-  "dependencies": {},
-  "devDependencies": {
-    "octicons": "4.3.0"
-  }
-}

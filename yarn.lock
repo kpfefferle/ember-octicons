@@ -5241,6 +5241,10 @@ object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
+octicons@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/octicons/-/octicons-4.3.0.tgz#fcbb72850c138fb4e0049aac18c4952951cac14d"
+
 on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
