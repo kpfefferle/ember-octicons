@@ -5,11 +5,9 @@ machine:
     version: "4"
 dependencies:
   pre:
-    - npm install -g bower
     - sudo apt-get update; sudo apt-get install -y --only-upgrade google-chrome-stable
   override:
     - yarn install --no-lockfile --non-interactive
-    - bower install
   cache_directories:
     - ~/.cache/yarn
 test:
