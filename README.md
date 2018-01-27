@@ -1,5 +1,5 @@
-# ember-octicons
-[![CircleCI](https://circleci.com/gh/kpfefferle/ember-octicons.svg?style=svg)](https://circleci.com/gh/kpfefferle/ember-octicons)
+# ember-octicons [![CircleCI](https://circleci.com/gh/kpfefferle/ember-octicons.svg?style=svg)](https://circleci.com/gh/kpfefferle/ember-octicons)
+
 [![Ember Observer Score](https://emberobserver.com/badges/ember-octicons.svg)](https://emberobserver.com/addons/ember-octicons)
 
 Easily add [GitHub Octicons](https://octicons.github.com/) to an Ember application.
