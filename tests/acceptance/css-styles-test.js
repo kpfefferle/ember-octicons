@@ -1,12 +1,13 @@
-import { test } from 'qunit';
-import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
+import { module, test } from 'qunit';
+import { setupApplicationTest } from 'ember-qunit';
+import { find, visit } from '@ember/test-helpers';
 
-moduleForAcceptance('Acceptance | css styles');
+module('Acceptance | css styles', function(hooks) {
+  setupApplicationTest(hooks);
 
-test('check that Octicons scss is being applied', function(assert) {
-  visit('/');
+  test('check that Octicons scss is being applied', async function(assert) {
+    await visit('/');
 
-  andThen(function() {
-    assert.equal(find('span.octicon').css('display'), 'inline-block');
+    assert.equal(window.getComputedStyle(find('span.octicon')).getPropertyValue('display'), 'inline-block');
   });
 });

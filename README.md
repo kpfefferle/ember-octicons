@@ -20,6 +20,11 @@ ember install ember-octicons
 * `cd ember-octicons`
 * `yarn`
 
+### Linting
+
+* `yarn lint:js`
+* `yarn lint:js --fix`
+
 ## Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
