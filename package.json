@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.12.0",
-    "octicons": "4.3.0"
+    "octicons": "7.2.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.6.0",
