@@ -2486,14 +2486,14 @@ ember-cli-uglify@^2.1.0:
     broccoli-uglify-sourcemap "^2.1.1"
     lodash.defaultsdeep "^4.6.0"
 
-ember-cli-update@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.21.1.tgz#34b6d7258cd5bf116e4634699e0d1e333db5f45b"
+ember-cli-update@^0.21.3:
+  version "0.21.3"
+  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.21.3.tgz#4c5487a8b7bfad03552901379b20a4b6b0f0beeb"
   dependencies:
     debug "^3.0.0"
     execa "^0.10.0"
     git-diff-apply "^0.8.3"
-    merge-package.json "^1.1.0"
+    merge-package.json "^1.1.1"
     npx "^10.0.1"
     opn "^5.3.0"
     semver "^5.4.1"
@@ -5385,11 +5385,11 @@ merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
 
-merge-package.json@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/merge-package.json/-/merge-package.json-1.1.0.tgz#2ccce6e22834ec98fbacb8c9e79402c0bb4d2826"
+merge-package.json@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/merge-package.json/-/merge-package.json-1.1.1.tgz#276d3dcd746a7b21e2641304a90c48d01dbedb4a"
   dependencies:
-    rfc6902-ordered "^2.1.0"
+    rfc6902-ordered "^2.1.1"
     three-way-merger "^0.5.0"
 
 merge-trees@^1.0.1:
@@ -7204,9 +7204,9 @@ retry@^0.8.0, retry@~0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.8.0.tgz#2367628dc0edb247b1eab649dc53ac8628ac2d5f"
 
-rfc6902-ordered@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/rfc6902-ordered/-/rfc6902-ordered-2.1.0.tgz#19de9061d316149b0994e0f734ff34e09264e9f9"
+rfc6902-ordered@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/rfc6902-ordered/-/rfc6902-ordered-2.1.1.tgz#b0db24236942ef449794df2ab1e30defadf07855"
   dependencies:
     debug "^3.1.0"
     rfc6902 "^2.2.1"
