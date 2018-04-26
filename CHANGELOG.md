@@ -3,6 +3,7 @@
 ## v0.9.0
 
 - Switch from icon font to using SVG icons
+- Update Octicons to ^7.2.0
 
 ## v0.8.0
 
@@ -18,16 +19,16 @@
 
 ## v0.6.0
 
-- Updated Octicons to 4.3.0
+- Update Octicons to 4.3.0
 
 ## v0.5.0
 
-- Updated Octicons to 4.2.0
+- Update Octicons to 4.2.0
 
 ## v0.4.0
 
-- Updated Octicons to 4.1.0
+- Update Octicons to 4.1.0
 
 ## v0.3.0
 
-- Updated Octicons to 3.5.0
+- Update Octicons to 3.5.0
