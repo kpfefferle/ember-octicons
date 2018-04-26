@@ -1,8 +1,8 @@
 # ember-octicons Changelog
 
-## [Unreleased]
+## v0.9.0
 
-- Switch away from icon font loading to SVG icons
+- Switch from icon font to using SVG icons
 
 ## v0.8.0
 
