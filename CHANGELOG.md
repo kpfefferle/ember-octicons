@@ -1,5 +1,9 @@
 # ember-octicons Changelog
 
+## [Unreleased]
+
+- Switch away from icon font loading to SVG icons
+
 ## v0.8.0
 
 - Load Octicons from NPM instead of Bower
