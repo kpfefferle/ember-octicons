@@ -25,8 +25,14 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
+    "broccoli-funnel": "^2.0.1",
+    "broccoli-merge-trees": "^3.0.0",
     "ember-cli-babel": "^6.12.0",
-    "octicons": "4.3.0"
+    "ember-cli-htmlbars": "^2.0.3",
+    "glob": "^7.1.2"
+  },
+  "peerDependencies": {
+    "octicons": "^7.2.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.7.0",
@@ -34,7 +40,6 @@
     "ember-cli": "~3.1.2",
     "ember-cli-dependency-checker": "^2.1.0",
     "ember-cli-eslint": "^4.2.3",
-    "ember-cli-htmlbars": "^2.0.3",
     "ember-cli-htmlbars-inline-precompile": "^1.0.2",
     "ember-cli-inject-live-reload": "^1.7.0",
     "ember-cli-qunit": "^4.3.2",
@@ -50,10 +55,12 @@
     "ember-resolver": "^4.5.5",
     "ember-source": "~3.1.1",
     "ember-source-channel-url": "^1.1.0",
+    "ember-svg-jar": "^1.1.1",
     "ember-try": "^0.2.23",
     "eslint-plugin-ember": "^5.1.0",
     "eslint-plugin-node": "^6.0.1",
-    "loader.js": "^4.7.0"
+    "loader.js": "^4.7.0",
+    "octicons": "^7.2.0"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
