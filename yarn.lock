@@ -2636,13 +2636,13 @@ ember-cli-uglify@^2.1.0:
     broccoli-uglify-sourcemap "^2.1.1"
     lodash.defaultsdeep "^4.6.0"
 
-ember-cli-update@^0.21.3:
-  version "0.21.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.21.3.tgz#4c5487a8b7bfad03552901379b20a4b6b0f0beeb"
+ember-cli-update@^0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.21.4.tgz#c09618ef51176dc3c7bb4931ee7c61584b335c6c"
   dependencies:
     debug "^3.0.0"
     execa "^0.10.0"
-    git-diff-apply "^0.8.3"
+    git-diff-apply "^0.8.4"
     merge-package.json "^1.1.1"
     npx "^10.0.1"
     opn "^5.3.0"
@@ -3770,9 +3770,9 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-git-diff-apply@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/git-diff-apply/-/git-diff-apply-0.8.3.tgz#5561ea4f887c9770b8b3a3ce310d0d0febd5644e"
+git-diff-apply@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/git-diff-apply/-/git-diff-apply-0.8.4.tgz#05a5bdf0cc9a11ff086b93038e7033bae4070d5c"
   dependencies:
     debug "^3.0.0"
     denodeify "^1.2.1"
