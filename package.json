@@ -7,19 +7,16 @@
     "octicons",
     "icons"
   ],
+  "repository": "https://github.com/kpfefferle/ember-octicons",
   "license": "MIT",
   "author": "Kevin Pfefferle",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kpfefferle/ember-octicons.git"
-  },
   "scripts": {
     "build": "ember build",
-    "lint:js": "eslint ./*.js addon addon-test-support app blueprints config lib server test-support tests",
+    "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
     "test:all": "ember try:each"
@@ -37,7 +34,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
-    "ember-cli": "~3.1.4",
+    "ember-cli": "~3.2.0",
     "ember-cli-dependency-checker": "^2.1.1",
     "ember-cli-eslint": "^4.2.3",
     "ember-cli-htmlbars-inline-precompile": "^1.0.3",
@@ -63,7 +60,7 @@
     "octicons": "^7.3.0"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "6.* || 8.* || >= 10.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
