@@ -1,5 +1,9 @@
 # ember-octicons Changelog
 
+## v0.10.0
+
+- Update Octicons to ^8.0.0
+
 ## v0.9.0
 
 - Switch from icon font to using SVG icons
