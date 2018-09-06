@@ -19,6 +19,15 @@ jobs:
           paths:
             - .
 
+  lint_hbs:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Lint HBS
+          command: yarn run lint:hbs
+
   lint_js:
     <<: *defaults
     steps:
@@ -27,26 +36,6 @@ jobs:
       - run:
           name: Lint JS
           command: yarn run lint:js
-
-  test_default:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: .
-      - run: echo 'export PATH=~/ember-octicons/node_modules/.bin:$PATH' >> $BASH_ENV
-      - run:
-          name: Run Tests
-          command: ember test
-
-  test_lts_2_12:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: .
-      - run: echo 'export PATH=~/ember-octicons/node_modules/.bin:$PATH' >> $BASH_ENV
-      - run:
-          name: Run Tests
-          command: ember try:one ember-lts-2.12 --skip-cleanup=true
 
   test_lts_2_16:
     <<: *defaults
@@ -93,13 +82,10 @@ workflows:
   test_matrix:
     jobs:
       - install_dependencies
+      - lint_hbs:
+          requires:
+            - install_dependencies
       - lint_js:
-          requires:
-            - install_dependencies
-      - test_default:
-          requires:
-            - install_dependencies
-      - test_lts_2_12:
           requires:
             - install_dependencies
       - test_lts_2_16:
