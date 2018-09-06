@@ -93,6 +93,7 @@ By default, the addon will add Octicons' normalizing CSS to your project's `vend
 ### Linting
 
 * `yarn lint:js`
+* `yarn lint:hbs`
 * `yarn lint:js --fix`
 
 ## Running Tests

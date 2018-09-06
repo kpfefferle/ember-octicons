@@ -7,7 +7,7 @@ var glob = require('glob');
 var octiconsDir = 'node_modules/octicons';
 
 module.exports = {
-  name: 'ember-octicons',
+  name: require('./package').name,
   octiconsConfig: null,
 
   included(app) {
