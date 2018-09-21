@@ -546,24 +546,24 @@
     ember-cli-babel "^6.10.0"
     ember-cli-htmlbars-inline-precompile "^1.0.0"
 
-"@glimmer/compiler@^0.36.0":
-  version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.36.1.tgz#f1360c159eb6651492be5122fd747271d044f1cc"
+"@glimmer/compiler@^0.36.2":
+  version "0.36.2"
+  resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.36.2.tgz#c44e08e9795e2c003a54ec605c70870aa61cb6df"
   dependencies:
-    "@glimmer/interfaces" "^0.36.1"
-    "@glimmer/syntax" "^0.36.1"
-    "@glimmer/util" "^0.36.1"
-    "@glimmer/wire-format" "^0.36.1"
+    "@glimmer/interfaces" "^0.36.2"
+    "@glimmer/syntax" "^0.36.2"
+    "@glimmer/util" "^0.36.2"
+    "@glimmer/wire-format" "^0.36.2"
 
 "@glimmer/di@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.2.0.tgz#73bfd4a6ee4148a80bf092e8a5d29bcac9d4ce7e"
 
-"@glimmer/interfaces@^0.36.1":
-  version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.36.1.tgz#43e82d2abad555b2d188588ebe0537c38f231b80"
+"@glimmer/interfaces@^0.36.2":
+  version "0.36.2"
+  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.36.2.tgz#04e2542d06e08cce2e243a9870e0c97edb512f87"
   dependencies:
-    "@glimmer/wire-format" "^0.36.1"
+    "@glimmer/wire-format" "^0.36.2"
 
 "@glimmer/resolver@^0.4.1":
   version "0.4.2"
@@ -571,24 +571,24 @@
   dependencies:
     "@glimmer/di" "^0.2.0"
 
-"@glimmer/syntax@^0.36.1":
-  version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.36.1.tgz#57ed225497127b75ac90eb6ea0ef4a0254729daf"
+"@glimmer/syntax@^0.36.2":
+  version "0.36.2"
+  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.36.2.tgz#86b294693c57ba8a28bfadeb4c09391f2dbf09b7"
   dependencies:
-    "@glimmer/interfaces" "^0.36.1"
-    "@glimmer/util" "^0.36.1"
+    "@glimmer/interfaces" "^0.36.2"
+    "@glimmer/util" "^0.36.2"
     handlebars "^4.0.6"
-    simple-html-tokenizer "^0.5.5"
+    simple-html-tokenizer "^0.5.6"
 
-"@glimmer/util@^0.36.1":
-  version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.36.1.tgz#0c99fb80919971c8792048ed6e14da505499a23c"
+"@glimmer/util@^0.36.2":
+  version "0.36.2"
+  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.36.2.tgz#6c0f99d0235659969bacffa47f8104f82b28fabe"
 
-"@glimmer/wire-format@^0.36.1":
-  version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.36.1.tgz#0309357df8f9e0d005b35eaf5c218fec57f1543c"
+"@glimmer/wire-format@^0.36.2":
+  version "0.36.2"
+  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.36.2.tgz#49891cc237baa90059d87cb480ec021820bcbfc5"
   dependencies:
-    "@glimmer/util" "^0.36.1"
+    "@glimmer/util" "^0.36.2"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1831,7 +1831,7 @@ broccoli-concat@^3.2.2:
     lodash.uniq "^4.2.0"
     walk-sync "^0.3.2"
 
-broccoli-concat@^3.4.0, broccoli-concat@^3.5.1:
+broccoli-concat@^3.5.1, broccoli-concat@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/broccoli-concat/-/broccoli-concat-3.7.1.tgz#22ba97420b33f5254549adc5bc41163f97bd1793"
   dependencies:
@@ -3398,20 +3398,20 @@ ember-cli-string-utils@^1.1.0:
   resolved "https://registry.yarnpkg.com/ember-cli-string-utils/-/ember-cli-string-utils-1.1.0.tgz#39b677fc2805f55173735376fcef278eaa4452a1"
 
 ember-cli-template-lint@^1.0.0-beta.1:
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-template-lint/-/ember-cli-template-lint-1.0.0-beta.1.tgz#8cffc1939885216135d627621d6e02fd485d1978"
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-template-lint/-/ember-cli-template-lint-1.0.0-beta.2.tgz#0ebd2f8c1f9ca47f9ee3b42755d66262440c14f6"
   dependencies:
     aot-test-generators "^0.1.0"
-    broccoli-concat "^3.4.0"
-    broccoli-persistent-filter "^1.2.0"
+    broccoli-concat "^3.7.1"
+    broccoli-persistent-filter "^1.4.3"
     chalk "^2.4.1"
-    debug "^3.0.0"
+    debug "^3.1.0"
     ember-cli-version-checker "^2.1.2"
-    ember-template-lint "^1.0.0-beta.2"
+    ember-template-lint "^1.0.0-beta.5"
     json-stable-stringify "^1.0.1"
     md5-hex "^2.0.0"
     strip-ansi "^4.0.0"
-    walk-sync "^0.3.2"
+    walk-sync "^0.3.3"
 
 ember-cli-test-loader@^2.2.0:
   version "2.2.0"
@@ -3668,11 +3668,11 @@ ember-svg-jar@^1.2.0:
     mkdirp "^0.5.1"
     path-posix "^1.0.0"
 
-ember-template-lint@^1.0.0-beta.2:
-  version "1.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-1.0.0-beta.4.tgz#534fd8239a35be1a2e83363a69d330f5703395ca"
+ember-template-lint@^1.0.0-beta.5:
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-1.0.0-beta.5.tgz#b9c3459752b9fb6c93f676f5a99e18372ad60af2"
   dependencies:
-    "@glimmer/compiler" "^0.36.0"
+    "@glimmer/compiler" "^0.36.2"
     chalk "^2.0.0"
     globby "^8.0.1"
     minimatch "^3.0.4"
@@ -9069,9 +9069,9 @@ silent-error@^1.0.0, silent-error@^1.0.1, silent-error@^1.1.0:
   dependencies:
     debug "^2.2.0"
 
-simple-html-tokenizer@^0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.5.5.tgz#110e63f2fe095e1f21f2f07e8c259a5ab6d6bebb"
+simple-html-tokenizer@^0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.5.6.tgz#e1e442b14f5484bf9a7e2924f78f00855e6b3c14"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -10076,7 +10076,7 @@ walk-sync@^0.2.5, walk-sync@^0.2.7:
     ensure-posix-path "^1.0.0"
     matcher-collection "^1.0.0"
 
-walk-sync@^0.3.1:
+walk-sync@^0.3.1, walk-sync@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-0.3.3.tgz#1e9f12cd4fe6e0e6d4a0715b5cc7e30711d43cd1"
   dependencies:
