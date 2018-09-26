@@ -3190,6 +3190,13 @@ ember-ajax@^3.1.0:
     ember-cli-babel "^6.16.0"
     najax "^1.0.3"
 
+ember-assign-polyfill@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/ember-assign-polyfill/-/ember-assign-polyfill-2.5.0.tgz#0dc7079addbdbad7984ba3f35d970cf07a73f704"
+  dependencies:
+    ember-cli-babel "^6.6.0"
+    ember-cli-version-checker "^2.0.0"
+
 ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.10.0, ember-cli-babel@^6.11.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1:
   version "6.17.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.17.0.tgz#1f3e8ed9f4e2338caef6bc2c3d08d3c9928d0ddd"
@@ -3546,12 +3553,6 @@ ember-cli@~3.4.1:
     watch-detector "^0.1.0"
     yam "^0.0.24"
 
-ember-copy@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ember-copy/-/ember-copy-1.0.0.tgz#426554ba6cf65920f31d24d0a3ca2cb1be16e4aa"
-  dependencies:
-    ember-cli-babel "^6.6.0"
-
 ember-debug-handlers-polyfill@^1.0.2:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ember-debug-handlers-polyfill/-/ember-debug-handlers-polyfill-1.1.1.tgz#e9ae0a720271a834221179202367421b580002ef"
@@ -3649,8 +3650,8 @@ ember-source@~3.4.0:
     resolve "^1.6.0"
 
 ember-svg-jar@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/ember-svg-jar/-/ember-svg-jar-1.2.1.tgz#a6f2c2404eec72aaa819b66407cec0ebe72be99b"
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/ember-svg-jar/-/ember-svg-jar-1.2.2.tgz#065d9a462353dbf3b1b4f57fb653859bfbe52022"
   dependencies:
     broccoli-caching-writer "^3.0.3"
     broccoli-funnel "^2.0.1"
@@ -3659,8 +3660,8 @@ ember-svg-jar@^1.2.0:
     broccoli-svg-optimizer "1.1.0"
     broccoli-symbolizer "^0.6.0"
     cheerio "^0.22.0"
+    ember-assign-polyfill "^2.5.0"
     ember-cli-babel "^6.6.0"
-    ember-copy "^1.0.0"
     lodash "^4.13.1"
     mkdirp "^0.5.1"
     path-posix "^1.0.0"
