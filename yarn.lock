@@ -2903,6 +2903,12 @@ debug@3.1.0, debug@^3.0.0, debug@^3.1.0, debug@~3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.0.tgz#373687bffa678b38b1cd91f861b63850035ddc87"
+  dependencies:
+    ms "^2.1.1"
+
 debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
@@ -3384,11 +3390,11 @@ ember-cli-uglify@^2.1.0:
     lodash.defaultsdeep "^4.6.0"
 
 ember-cli-update@^0.27.0:
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.27.0.tgz#b159bf7d3a05e4e23bf08079dfba36688d30cd49"
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.27.1.tgz#90e8d4c53278f4c27cdf8170b80d38d891d1b5b5"
   dependencies:
     cpr "^3.0.1"
-    debug "^3.0.0"
+    debug "^4.0.0"
     denodeify "^1.2.1"
     execa "^1.0.0"
     git-diff-apply "^0.10.0"
@@ -6902,7 +6908,7 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-ms@^2.0.0:
+ms@^2.0.0, ms@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
