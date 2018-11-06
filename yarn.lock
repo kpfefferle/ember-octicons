@@ -3793,9 +3793,9 @@ ember-maybe-import-regenerator@^0.1.6:
     regenerator-runtime "^0.9.5"
 
 ember-qunit@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-4.1.0.tgz#2faa615a161856883def64fa786173eb992b825c"
-  integrity sha512-VRXD7DFp+ji3cwoNQzE3IpLqVuBLdTY2n6D8LNOP+7BTEw3Vcus9isjhB7UXOCKcJ3E4Z5cdIMC/b+d3YRWVEw==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-4.1.1.tgz#1db93d5e0b649a2e32137ec05d87be24a257d55c"
+  integrity sha512-mIr60Hmpp3NdQHEWRKgGszV55qnapOM4jkr7y6inx5zaaq2UofD+R89knDFU9gctpNzjdZcpXhSuRk/aRrF9Lw==
   dependencies:
     "@ember/test-helpers" "^1.0.0"
     broccoli-funnel "^2.0.1"
