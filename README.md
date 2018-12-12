@@ -83,28 +83,3 @@ By default, the addon will add Octicons' normalizing CSS to your project's `vend
 /* app/styles/app.css */
 @import "octicons.css";
 ```
-
-## Developing
-
-* `git clone https://github.com/kpfefferle/ember-octicons.git` this repository
-* `cd ember-octicons`
-* `yarn`
-
-### Linting
-
-* `yarn lint:js`
-* `yarn lint:hbs`
-* `yarn lint:js --fix`
-
-## Running Tests
-
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
-
-### Running the dummy application
-
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
