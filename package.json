@@ -30,7 +30,7 @@
     "glob": "^7.1.2"
   },
   "peerDependencies": {
-    "octicons": "^7.2.0"
+    "octicons": "^8.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",
@@ -60,7 +60,7 @@
     "eslint-plugin-ember": "^6.0.0",
     "eslint-plugin-node": "^8.0.0",
     "loader.js": "^4.7.0",
-    "octicons": "~8.3.0"
+    "octicons": "^8.4.2"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
