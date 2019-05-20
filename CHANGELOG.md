@@ -1,5 +1,9 @@
 # ember-octicons Changelog
 
+## v1.0.0
+
+- Drop Node 6 support
+
 ## v0.10.0
 
 - Update Octicons to ^8.0.0
