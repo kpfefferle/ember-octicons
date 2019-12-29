@@ -77,6 +77,26 @@ jobs:
           name: Run Tests
           command: ember try:one ember-beta --skip-cleanup=true
 
+  test_default_with_jquery:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run: echo 'export PATH=~/ember-octicons/node_modules/.bin:$PATH' >> $BASH_ENV
+      - run:
+          name: Run Tests
+          command: ember try:one ember-default-with-jquery --skip-cleanup=true
+
+  test_classic:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run: echo 'export PATH=~/ember-octicons/node_modules/.bin:$PATH' >> $BASH_ENV
+      - run:
+          name: Run Tests
+          command: ember try:one ember-classic --skip-cleanup=true
+
 workflows:
   version: 2
   test_matrix:
@@ -98,5 +118,11 @@ workflows:
           requires:
             - install_dependencies
       - test_beta:
+          requires:
+            - install_dependencies
+      - test_default_with_jquery:
+          requires:
+            - install_dependencies
+      - test_classic:
           requires:
             - install_dependencies
