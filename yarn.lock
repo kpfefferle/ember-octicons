@@ -4968,9 +4968,9 @@ ember-cli-string-utils@^1.1.0:
   integrity sha1-ObZ3/CgF9VFzc1N2/O8njqpEUqE=
 
 ember-cli-template-lint@^1.0.0-beta.1:
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-template-lint/-/ember-cli-template-lint-1.0.0-beta.3.tgz#48f2fa43e7ad0172685fa171e5acd4d75b873792"
-  integrity sha512-ivrvYih+cx7VUlyyMQBmk61Ki+gT5axfppWrk6fSvHaoxHZadXU3zRJMT5DPkeRaayRu0y1dls4wqfrUhzQ1PA==
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-template-lint/-/ember-cli-template-lint-1.0.0.tgz#8ca8f5f05fdcad35c13f26b65fb93c016196bdc9"
+  integrity sha512-acWyJUvRFo2aA/0kqeUxfCPwLtPk3ckZ/1I0BzBX9qW/Gi8qWqYnwnI/vEotIqmsQl+npbl0/SXeQHFrUdyB0g==
   dependencies:
     aot-test-generators "^0.1.0"
     broccoli-concat "^3.7.1"
@@ -4978,7 +4978,7 @@ ember-cli-template-lint@^1.0.0-beta.1:
     chalk "^2.4.1"
     debug "^4.0.1"
     ember-cli-version-checker "^3.0.1"
-    ember-template-lint "^1.1.0"
+    ember-template-lint "^1.2.0"
     json-stable-stringify "^1.0.1"
     md5-hex "^2.0.0"
     strip-ansi "^4.0.0"
@@ -5034,15 +5034,7 @@ ember-cli-uglify@^3.0.0:
     broccoli-uglify-sourcemap "^3.1.0"
     lodash.defaultsdeep "^4.6.0"
 
-ember-cli-version-checker@^2.0.0, ember-cli-version-checker@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-version-checker/-/ember-cli-version-checker-2.1.2.tgz#305ce102390c66e4e0f1432dea9dc5c7c19fed98"
-  integrity sha512-sjkHGr4IGXnO3EUcY21380Xo9Qf6bC8HWH4D62bVnrQop/8uha5XgMQRoAflMCeH6suMrezQL287JUoYc2smEw==
-  dependencies:
-    resolve "^1.3.3"
-    semver "^5.3.0"
-
-ember-cli-version-checker@^2.1.1:
+ember-cli-version-checker@^2.0.0, ember-cli-version-checker@^2.1.1, ember-cli-version-checker@^2.1.2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-version-checker/-/ember-cli-version-checker-2.2.0.tgz#47771b731fe0962705e27c8199a9e3825709f3b3"
   integrity sha512-G+KtYIVlSOWGcNaTFHk76xR4GdzDLzAS4uxZUKdASuFX0KJE43C6DaqL+y3VTpUFLI2FIkAS6HZ4I1YBi+S3hg==
@@ -5299,10 +5291,10 @@ ember-svg-jar@^2.1.0:
     mkdirp "^0.5.1"
     path-posix "^1.0.0"
 
-ember-template-lint@^1.1.0:
-  version "1.12.3"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-1.12.3.tgz#6e494c181ed316b61573f8664c515fe95d885d70"
-  integrity sha512-r7qlLYeXI5BTOPd2TZfgHudd4IAmYNjLnKd3PisPvvFX+OvbSd+oKakxC7CDFgIJNocIT0ky9xnMO++rynzduw==
+ember-template-lint@^1.2.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-1.13.0.tgz#9e271da31ca34fe65ed8af30f91b94cb701d3093"
+  integrity sha512-poQoMxSaUs+7LQgN5+h7DkNyvSkpoX94uwEA2WkPrsyXJeUSwO9541jiseXUFNCCNMvEDAlBPvOcfG99BA9uxA==
   dependencies:
     "@glimmer/syntax" "^0.45.0"
     chalk "^2.0.0"
