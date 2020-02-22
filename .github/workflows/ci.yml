@@ -46,9 +46,5 @@ jobs:
           node-version: 10.x
       - name: Install Dependencies
         run: yarn install
-      - name: Lint HBS
-        run: yarn run lint:hbs
-      - name: Lint JS
-        run: yarn run lint:js
       - name: Run Tests
         run: yarn ember try:one ember-${{ matrix.scenario }} --skip-cleanup=true
