@@ -1,4 +1,6 @@
-# ember-octicons [![CircleCI](https://circleci.com/gh/kpfefferle/ember-octicons.svg?style=svg)](https://circleci.com/gh/kpfefferle/ember-octicons)
+# ember-octicons
+
+[![Ember CI](https://github.com/kpfefferle/ember-octicons/workflows/Ember%20CI/badge.svg)](https://github.com/kpfefferle/ember-octicons/actions)
 
 [![Ember Observer Score](https://emberobserver.com/badges/ember-octicons.svg)](https://emberobserver.com/addons/ember-octicons)
 
