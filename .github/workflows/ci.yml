@@ -1,0 +1,54 @@
+name: Ember CI
+on: push
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: Install Dependencies
+        run: yarn install
+      - name: Lint HBS
+        run: yarn run lint:hbs
+      - name: Lint JS
+        run: yarn run lint:js
+      - name: Run Tests
+        run: yarn test
+
+  ember-try:
+    name: ember-try (${{ matrix.scenario }})
+    needs: test
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    strategy:
+      matrix:
+        scenario:
+          - lts-3.12
+          - lts-3.16
+          - release
+          - beta
+          - default-with-jquery
+          - classic
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: Install Dependencies
+        run: yarn install
+      - name: Lint HBS
+        run: yarn run lint:hbs
+      - name: Lint JS
+        run: yarn run lint:js
+      - name: Run Tests
+        run: yarn ember try:one ember-${{ matrix.scenario }} --skip-cleanup=true
