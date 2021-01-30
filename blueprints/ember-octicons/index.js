@@ -3,5 +3,5 @@ module.exports = {
 
   afterInstall() {
     return this.addPackageToProject('octicons', '^8.0.0');
-  }
-}
+  },
+};

@@ -18,10 +18,12 @@ module.exports = {
     // Import SVG icons
     if (this.octiconsConfig.icons !== null) {
       let destDir = this.octiconsConfig.destDir || 'images/svg/octicons';
-      this.octiconsConfig.icons.forEach(icon => {
+      this.octiconsConfig.icons.forEach((icon) => {
         let iconPath = `node_modules/octicons/build/svg/${icon}.svg`;
         if (fs.existsSync(iconPath)) {
-          app.import(`node_modules/octicons/build/svg/${icon}.svg`, { destDir });
+          app.import(`node_modules/octicons/build/svg/${icon}.svg`, {
+            destDir,
+          });
         } else {
           this.writeWarning(`Unknown icon: '${icon}' will not be imported`);
         }
@@ -43,7 +45,7 @@ module.exports = {
           return 'octicons.css';
         }
         return relativePath;
-      }
+      },
     });
   },
 
@@ -51,15 +53,18 @@ module.exports = {
     let config = (this.app && this.app.options) || {};
     let octiconsConfig = config['octicons'] || {
       destDir: null,
-      icons: []
+      icons: [],
     };
 
-    if(octiconsConfig.icons !== null && octiconsConfig.icons.length === 0) {
-      this.writeWarning('No octicons were specified in ember-cli-build; defaulting to all icons');
+    if (octiconsConfig.icons !== null && octiconsConfig.icons.length === 0) {
+      this.writeWarning(
+        'No octicons were specified in ember-cli-build; defaulting to all icons'
+      );
 
-      glob.sync('node_modules/octicons/build/svg/*.svg')
-        .map(i => i.split('/').pop())
-        .map(i => i.replace(/\.svg$/i, ''))
+      glob
+        .sync('node_modules/octicons/build/svg/*.svg')
+        .map((i) => i.split('/').pop())
+        .map((i) => i.replace(/\.svg$/i, ''))
         .reduce((a, v) => {
           a.icons.push(v);
           return a;
@@ -71,5 +76,5 @@ module.exports = {
 
   writeWarning(message) {
     this.ui.writeWarnLine(`[ember-octicons] ${message}`);
-  }
+  },
 };

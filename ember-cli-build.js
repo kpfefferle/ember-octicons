@@ -2,17 +2,15 @@
 
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberAddon(defaults, {
     // Add options here
     octicons: {
-      icons: ['mark-github']
+      icons: ['mark-github'],
     },
     svgJar: {
-      sourceDirs: [
-        'node_modules/octicons/build/svg'
-      ]
-    }
+      sourceDirs: ['node_modules/octicons/build/svg'],
+    },
   });
 
   /*
