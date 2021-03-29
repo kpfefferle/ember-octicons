@@ -39,7 +39,7 @@ jobs:
           - lts-3.16
           - lts-3.20
           - release
-          - beta
+          # - beta
           - default-with-jquery
           - classic
     steps:
