@@ -36,12 +36,14 @@ jobs:
     strategy:
       matrix:
         scenario:
-          - lts-3.16
-          - lts-3.20
-          - release
-          # - beta
-          - default-with-jquery
-          - classic
+          - ember-lts-3.20
+          - ember-lts-3.24
+          - ember-release
+          - ember-beta
+          - ember-default-with-jquery
+          - ember-classic
+          # - embroider-safe
+          # - embroider-optimized
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -59,4 +61,4 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Run Tests
-        run: yarn ember try:one ember-${{ matrix.scenario }} --skip-cleanup=true
+        run: yarn ember try:one ${{ matrix.scenario }} --skip-cleanup=true
