@@ -1,7 +1,7 @@
 {
   "name": "ember-octicons",
   "version": "3.0.0",
-  "description": "Easily add GitHub Octicons to your Ember project.",
+  "description": "Easily add GitHub Primer/Octicons to your Ember project.",
   "keywords": [
     "ember-addon",
     "octicons",
@@ -29,13 +29,12 @@
   },
   "dependencies": {
     "broccoli-funnel": "^3.0.1",
-    "broccoli-merge-trees": "^4.1.0",
     "ember-cli-babel": "^7.26.6",
     "ember-cli-htmlbars": "^5.7.1",
     "glob": "^7.1.2"
   },
   "peerDependencies": {
-    "octicons": "^8.0.0"
+    "@primer/octicons": "^16.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
@@ -43,6 +42,7 @@
     "@embroider/test-setup": "^0.46.2",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
+    "@primer/octicons": "^16.0.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.11.3",
@@ -62,7 +62,7 @@
     "ember-resolver": "^8.0.0",
     "ember-source": "~3.28.0",
     "ember-source-channel-url": "^3.0.0",
-    "ember-svg-jar": "^2.1.0",
+    "ember-svg-jar": "^2.3.3",
     "ember-template-lint": "^3.4.2",
     "ember-try": "^1.4.0",
     "eslint": "^7.27.0",
@@ -73,7 +73,6 @@
     "eslint-plugin-qunit": "^6.1.1",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
-    "octicons": "^8.4.2",
     "prettier": "^2.3.0",
     "qunit": "^2.15.0",
     "qunit-dom": "^2.0.0"

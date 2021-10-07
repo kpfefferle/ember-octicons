@@ -4,7 +4,7 @@
 
 [![Ember Observer Score](https://emberobserver.com/badges/ember-octicons.svg)](https://emberobserver.com/addons/ember-octicons)
 
-Easily import [GitHub Octicons](https://octicons.github.com/) into an Ember application's build.
+Easily import [GitHub Primer/Octicons](https://primer.style/octicons/) into an Ember application's build.
 
 ## Usage
 
@@ -24,7 +24,7 @@ To import Octicon SVGs as build time assets, add an `octicons` configuration obj
 // ember-cli-build.js
   let app = new EmberAddon(defaults, {
     octicons: {
-      icons: ['alert', 'bell', 'j', /* etc... */]
+      icons: ['alert', 'bell', 'mark-github', /* etc... */]
     }
   });
 ```
@@ -32,7 +32,7 @@ To import Octicon SVGs as build time assets, add an `octicons` configuration obj
 Now the SVG file can be used like any other asset:
 
 ```hbs
-<img src="images/svg/octicons/mark-github.svg">
+<img src="images/svg/octicons/mark-github-16.svg" class="octicon" />
 ```
 
 By default, SVG files will be imported into the `images/svg/octicons` directory. To customize the import destination, set a `destDir` in the `octicons` config:
@@ -60,7 +60,7 @@ If you would rather use [ember-svg-jar](https://github.com/ivanvotti/ember-svg-j
     svgJar: {
       sourceDirs: [
         'public', // default SVGJar lookup directory
-        'node_modules/octicons/build/svg'
+        'node_modules/@primer/octicons/build/svg'
       ]
     }
   });
@@ -69,7 +69,7 @@ If you would rather use [ember-svg-jar](https://github.com/ivanvotti/ember-svg-j
 And then use Ember SVGJar's `{{svg-jar}}` helper:
 
 ```hbs
-{{svg-jar "mark-github" class="octicon"}}
+{{svg-jar "mark-github-16" class="octicon"}}
 ```
 
 ### CSS
