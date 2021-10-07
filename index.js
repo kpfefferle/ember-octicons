@@ -3,11 +3,20 @@
 const Funnel = require('broccoli-funnel');
 const fs = require('fs');
 const glob = require('glob');
+const validatePeerDependencies = require('validate-peer-dependencies');
 
 const octiconsDir = 'node_modules/@primer/octicons';
 
 module.exports = {
   name: require('./package').name,
+
+  init() {
+    this._super.init.apply(this, arguments);
+
+    validatePeerDependencies(__dirname, {
+      resolvePeerDependenciesFrom: this.parent.root,
+    });
+  },
 
   included(app) {
     this._super.included(app);
@@ -19,19 +28,26 @@ module.exports = {
       let destDir = octiconsConfig.destDir || 'images/svg/octicons';
       octiconsConfig.icons.forEach((icon) => {
         let baseFile = `${octiconsDir}/build/svg/${icon}`;
+        let notFound = true;
         if (fs.existsSync(`${baseFile}.svg`)) {
           app.import(`${baseFile}.svg`, {
             destDir,
           });
-        } else if (fs.existsSync(`${baseFile}-16.svg`)) {
+          notFound = false;
+        }
+        if (fs.existsSync(`${baseFile}-16.svg`)) {
           app.import(`${baseFile}-16.svg`, {
             destDir,
           });
-        } else if (fs.existsSync(`${baseFile}-24.svg`)) {
+          notFound = false;
+        }
+        if (fs.existsSync(`${baseFile}-24.svg`)) {
           app.import(`${baseFile}-24.svg`, {
             destDir,
           });
-        } else {
+          notFound = false;
+        }
+        if (notFound) {
           this.writeWarning(`Unknown icon: '${icon}' will not be imported`);
         }
       });
