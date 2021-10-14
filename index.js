@@ -1,30 +1,53 @@
 'use strict';
 
-var Funnel = require('broccoli-funnel');
-var fs = require('fs');
-var glob = require('glob');
+const Funnel = require('broccoli-funnel');
+const fs = require('fs');
+const glob = require('glob');
+const validatePeerDependencies = require('validate-peer-dependencies');
 
-var octiconsDir = 'node_modules/octicons';
+const octiconsDir = 'node_modules/@primer/octicons';
 
 module.exports = {
   name: require('./package').name,
-  octiconsConfig: null,
+
+  init() {
+    this._super.init.apply(this, arguments);
+
+    validatePeerDependencies(__dirname, {
+      resolvePeerDependenciesFrom: this.parent.root,
+    });
+  },
 
   included(app) {
     this._super.included(app);
 
-    this.octiconsConfig = this.buildConfig();
+    let octiconsConfig = this.buildConfig();
 
     // Import SVG icons
-    if (this.octiconsConfig.icons !== null) {
-      let destDir = this.octiconsConfig.destDir || 'images/svg/octicons';
-      this.octiconsConfig.icons.forEach((icon) => {
-        let iconPath = `node_modules/octicons/build/svg/${icon}.svg`;
-        if (fs.existsSync(iconPath)) {
-          app.import(`node_modules/octicons/build/svg/${icon}.svg`, {
+    if (octiconsConfig.icons !== null) {
+      let destDir = octiconsConfig.destDir || 'images/svg/octicons';
+      octiconsConfig.icons.forEach((icon) => {
+        let baseFile = `${octiconsDir}/build/svg/${icon}`;
+        let notFound = true;
+        if (fs.existsSync(`${baseFile}.svg`)) {
+          app.import(`${baseFile}.svg`, {
             destDir,
           });
-        } else {
+          notFound = false;
+        }
+        if (fs.existsSync(`${baseFile}-16.svg`)) {
+          app.import(`${baseFile}-16.svg`, {
+            destDir,
+          });
+          notFound = false;
+        }
+        if (fs.existsSync(`${baseFile}-24.svg`)) {
+          app.import(`${baseFile}-24.svg`, {
+            destDir,
+          });
+          notFound = false;
+        }
+        if (notFound) {
           this.writeWarning(`Unknown icon: '${icon}' will not be imported`);
         }
       });
@@ -51,10 +74,13 @@ module.exports = {
 
   buildConfig() {
     let config = (this.app && this.app.options) || {};
-    let octiconsConfig = config['octicons'] || {
-      destDir: null,
-      icons: [],
-    };
+    let octiconsConfig = Object.assign(
+      {
+        destDir: null,
+        icons: [],
+      },
+      config['octicons']
+    );
 
     if (octiconsConfig.icons !== null && octiconsConfig.icons.length === 0) {
       this.writeWarning(
@@ -62,7 +88,7 @@ module.exports = {
       );
 
       glob
-        .sync('node_modules/octicons/build/svg/*.svg')
+        .sync(`${octiconsDir}/build/svg/*.svg`)
         .map((i) => i.split('/').pop())
         .map((i) => i.replace(/\.svg$/i, ''))
         .reduce((a, v) => {

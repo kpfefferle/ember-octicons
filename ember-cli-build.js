@@ -9,7 +9,7 @@ module.exports = function (defaults) {
       icons: ['mark-github'],
     },
     svgJar: {
-      sourceDirs: ['node_modules/octicons/build/svg'],
+      sourceDirs: ['node_modules/@primer/octicons/build/svg'],
     },
   });
 
