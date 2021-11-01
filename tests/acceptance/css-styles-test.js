@@ -10,9 +10,15 @@ module('Acceptance | css styles', function (hooks) {
 
     let octicon = this.element.querySelector('svg.octicon');
     let octiconStyle = window.getComputedStyle(octicon);
-    assert.equal(octiconStyle.getPropertyValue('display'), 'inline-block');
-    assert.equal(octiconStyle.getPropertyValue('vertical-align'), 'text-top');
-    assert.equal(
+    assert.strictEqual(
+      octiconStyle.getPropertyValue('display'),
+      'inline-block'
+    );
+    assert.strictEqual(
+      octiconStyle.getPropertyValue('vertical-align'),
+      'text-top'
+    );
+    assert.strictEqual(
       octiconStyle.getPropertyValue('fill'),
       octiconStyle.getPropertyValue('color')
     );
