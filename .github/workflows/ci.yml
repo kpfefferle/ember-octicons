@@ -38,7 +38,7 @@ jobs:
         scenario:
           - ember-lts-3.20
           - ember-lts-3.24
-          - ember-release
+          # - ember-release
           # - ember-beta
           - ember-default-with-jquery
           - ember-classic
