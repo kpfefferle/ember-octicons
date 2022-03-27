@@ -35,7 +35,7 @@
     "validate-peer-dependencies": "^2.0.0"
   },
   "peerDependencies": {
-    "@primer/octicons": "^16.0.0"
+    "@primer/octicons": "^17.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
@@ -43,7 +43,7 @@
     "@embroider/test-setup": "^1.2.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "@primer/octicons": "^16.0.0",
+    "@primer/octicons": "^17.0.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.11.3",
