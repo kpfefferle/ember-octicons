@@ -13,24 +13,16 @@ concurrency:
 
 jobs:
   test:
-    name: Run Tests
+    name: "Tests"
     runs-on: ubuntu-latest
-    env:
-      CI: true
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v2
         with:
           node-version: 12.x
-      - name: Node Modules Cache
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
+          cache: yarn
       - name: Install Dependencies
         run: yarn install
       - name: Lint
@@ -38,37 +30,32 @@ jobs:
       - name: Run Tests
         run: yarn test:ember
 
-  ember-try:
-    name: ember-try (${{ matrix.scenario }})
-    needs: test
+  try-scenarios:
+    name: ${{ matrix.try-scenario }}
     runs-on: ubuntu-latest
-    env:
-      CI: true
+    needs: "test"
+
     strategy:
+      fail-fast: false
       matrix:
-        scenario:
+        try-scenario:
           - ember-lts-3.24
           - ember-lts-3.28
           # - ember-release
           # - ember-beta
+          # - ember-canary
           - ember-classic
           # - embroider-safe
           # - embroider-optimized
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v2
         with:
           node-version: 12.x
-      - name: Node Modules Cache
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
+          cache: yarn
       - name: Install Dependencies
         run: yarn install
       - name: Run Tests
-        run: yarn ember try:one ${{ matrix.scenario }} --skip-cleanup=true
+        run: yarn ember try:one ${{ matrix.try-scenario }}
