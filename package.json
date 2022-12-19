@@ -77,6 +77,10 @@
     "qunit-dom": "^2.0.0",
     "webpack": "^5.75.0"
   },
+  "resolutions": {
+    "@glimmer/interfaces": "^0.84.2",
+	  "@glimmer/reference": "^0.84.2"
+  },
   "engines": {
     "node": "14.* || 16.* || >= 18"
   },
