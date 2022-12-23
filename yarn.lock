@@ -4162,9 +4162,9 @@ ember-page-title@^7.0.0:
     ember-cli-babel "^7.26.6"
 
 ember-qunit@^6.0.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-6.1.0.tgz#8362763ea6b4f84b9bbef1efac5afad08a89e607"
-  integrity sha512-9moBSA6GUnrIYDGulokzSF3Nlue5OUV78jdiZzXF9mok5ZMPGoDEGrHMnlxoB7OuTfjVGoukfpJx89gW/tl0Qw==
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-6.1.1.tgz#9e2b7835239e7ffd176e08e536975f66e59f75e5"
+  integrity sha512-3/jCpoecltFV6vm7GCtSDNRxBzWx96nP+QrbereJAnioSaGeLe+slKL3l80mGzMYDTvn7ESobZ+Ba+OQ1vMMKQ==
   dependencies:
     broccoli-funnel "^3.0.8"
     broccoli-merge-trees "^3.0.2"
