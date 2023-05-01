@@ -38,7 +38,7 @@
   },
   "peerDependencies": {
     "@primer/octicons": "^18.0.0",
-    "ember-source": "^4.0.0"
+    "ember-source": "^4.0.0 || >= 5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.21.3",
