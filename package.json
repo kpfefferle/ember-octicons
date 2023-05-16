@@ -88,7 +88,7 @@
     "@glimmer/reference": "^0.84.2"
   },
   "engines": {
-    "node": "14.* || 16.* || >= 18"
+    "node": "16.* || 18.* || >= 20"
   },
   "ember": {
     "edition": "octane"
@@ -97,7 +97,7 @@
     "configPath": "tests/dummy/config"
   },
   "volta": {
-    "node": "16.18.1",
+    "node": "18.16.0",
     "yarn": "1.22.19"
   }
 }
