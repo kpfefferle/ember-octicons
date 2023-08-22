@@ -79,12 +79,12 @@ module.exports = {
         destDir: null,
         icons: [],
       },
-      config['octicons']
+      config['octicons'],
     );
 
     if (octiconsConfig.icons !== null && octiconsConfig.icons.length === 0) {
       this.writeWarning(
-        'No octicons were specified in ember-cli-build; defaulting to all icons'
+        'No octicons were specified in ember-cli-build; defaulting to all icons',
       );
 
       glob

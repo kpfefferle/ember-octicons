@@ -12,15 +12,15 @@ module('Acceptance | css styles', function (hooks) {
     let octiconStyle = window.getComputedStyle(octicon);
     assert.strictEqual(
       octiconStyle.getPropertyValue('display'),
-      'inline-block'
+      'inline-block',
     );
     assert.strictEqual(
       octiconStyle.getPropertyValue('vertical-align'),
-      'text-top'
+      'text-top',
     );
     assert.strictEqual(
       octiconStyle.getPropertyValue('fill'),
-      octiconStyle.getPropertyValue('color')
+      octiconStyle.getPropertyValue('color'),
     );
   });
 });
