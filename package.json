@@ -30,9 +30,9 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
-    "@babel/core": "^7.22.20",
+    "@babel/core": "^7.23.2",
     "broccoli-funnel": "^3.0.1",
-    "ember-cli-babel": "^8.0.0",
+    "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
     "glob": "^10.2.2",
     "validate-peer-dependencies": "^2.0.0"
@@ -43,15 +43,15 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
-    "@babel/plugin-proposal-decorators": "^7.22.15",
+    "@babel/plugin-proposal-decorators": "^7.23.2",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^3.2.0",
-    "@embroider/test-setup": "^3.0.1",
+    "@embroider/test-setup": "^3.0.2",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "@primer/octicons": "^19.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "concurrently": "^8.2.1",
+    "concurrently": "^8.2.2",
     "ember-auto-import": "^2.6.3",
     "ember-cli": "~5.4.0",
     "ember-cli-clean-css": "^3.0.0",
@@ -69,27 +69,27 @@
     "ember-svg-jar": "^2.3.3",
     "ember-template-lint": "^5.11.2",
     "ember-try": "^3.0.0",
-    "eslint": "^8.49.0",
+    "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-ember": "^11.11.1",
-    "eslint-plugin-n": "^16.1.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-qunit": "^8.0.0",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-qunit": "^8.0.1",
     "loader.js": "^4.7.0",
     "prettier": "^3.0.3",
-    "qunit": "^2.19.4",
+    "qunit": "^2.20.0",
     "qunit-dom": "^3.0.0",
-    "stylelint": "^15.10.3",
+    "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-prettier": "^4.0.2",
-    "webpack": "^5.88.2"
+    "webpack": "^5.89.0"
   },
   "resolutions": {
     "@glimmer/interfaces": "^0.84.2",
     "@glimmer/reference": "^0.84.2"
   },
   "engines": {
-    "node": "16.* || 18.* || >= 20"
+    "node": "18.* || >= 20"
   },
   "ember": {
     "edition": "octane"
