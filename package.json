@@ -85,8 +85,7 @@
     "webpack": "^5.89.0"
   },
   "resolutions": {
-    "@glimmer/interfaces": "^0.84.2",
-    "@glimmer/reference": "^0.84.2"
+    "string-width": "^4.2.0"
   },
   "engines": {
     "node": "18.* || >= 20"
