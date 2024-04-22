@@ -46,7 +46,7 @@
     "@babel/plugin-proposal-decorators": "^7.24.0",
     "@ember/optional-features": "^2.1.0",
     "@ember/test-helpers": "^3.3.0",
-    "@embroider/test-setup": "^3.0.3",
+    "@embroider/test-setup": "^4.0.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "@primer/octicons": "^19.1.0",
