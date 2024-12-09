@@ -1639,9 +1639,9 @@
     find-up "^5.0.0"
 
 "@primer/octicons@^19.1.0":
-  version "19.12.0"
-  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-19.12.0.tgz#0a1f31e665fe07edbf1b108f512e99dcb36d5cbc"
-  integrity sha512-VX2/Iu43ZfQaX9OoCNJrzrLBF5BicG3hVY/Nx6slP/YJVZlVwWUiZzjF9hg9lNlLfii5gjl/gAGf/5YZ3Yz78A==
+  version "19.13.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-19.13.0.tgz#ec7e7b2cbd6f4775fba38e38c27045e9f8d32e7f"
+  integrity sha512-U5g7Bv89At8qFXUy9MQlOUs4iPXR5XR4QPnSZWhmOn2oCgwf4LjdvfC+8OzhUFx2wC8k9TbRRAMVuCkqFLPlfQ==
   dependencies:
     object-assign "^4.1.1"
 
