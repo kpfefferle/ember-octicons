@@ -47,7 +47,7 @@
     "@ember/optional-features": "^2.2.0",
     "@ember/test-helpers": "^5.1.0",
     "@embroider/test-setup": "^4.0.0",
-    "@glimmer/component": "^1.0.4",
+    "@glimmer/component": "^2.0.0",
     "@glimmer/tracking": "^1.0.4",
     "@primer/octicons": "^19.1.0",
     "broccoli-asset-rev": "^3.0.0",
