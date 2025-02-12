@@ -4710,9 +4710,9 @@ ember-source@~6.2.0:
     simple-html-tokenizer "^0.5.11"
 
 ember-svg-jar@^2.3.3:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/ember-svg-jar/-/ember-svg-jar-2.6.0.tgz#62e2b4b6eed3e900a4be59d321e0418748e3fd3c"
-  integrity sha512-LRG+BoQJTHPQlxfCPGIrOZo/UqXtadcOLuUjrhHRyQJJYDFEeJX5sWUsz/bJe48Bgi9FyOoQtdqrRAQ+COn2Kg==
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/ember-svg-jar/-/ember-svg-jar-2.6.1.tgz#1e53fc2c747c6bcd855b5c41063cabffd50860f7"
+  integrity sha512-J2DRPbLYakNr3zpYpIAuBicaxORZTRd0KByxIYwEQd/53zvWgWeThKSOtx1dOD7jC8cw0vd28Jg90nvxbcV2YA==
   dependencies:
     "@embroider/macros" "^1.12.2"
     broccoli-caching-writer "^3.0.3"
