@@ -4341,9 +4341,9 @@ ember-cli-dependency-checker@^3.3.2:
     semver "^5.7.1"
 
 ember-cli-deprecation-workflow@^3.0.1:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-deprecation-workflow/-/ember-cli-deprecation-workflow-3.2.0.tgz#0e92ccedca117ec35659708adf583fcf8d78d02f"
-  integrity sha512-JazICNiV9z5NvqncLYt9FkO5mjIK2sLvCG5mBJuSYP6AQmb5ZQqSTsthVHCsI0EirW2DELI9oezZW+VFMt9ZqQ==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-deprecation-workflow/-/ember-cli-deprecation-workflow-3.3.0.tgz#1eb70c09125c11d3fcefbea7313bd4c74a369a3b"
+  integrity sha512-AZTOv+xftPXNov+X7k/JZFMd5/Suzkuvg5Zc1W3MoJb+kjIwW/3sieBOXEbt7aMq9Px4ixb9FSrFPNlzggV4qA==
   dependencies:
     "@babel/core" "^7.23.2"
     ember-cli-babel "^8.2.0"
