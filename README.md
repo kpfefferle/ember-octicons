@@ -22,11 +22,11 @@ To import Octicon SVGs as build time assets, add an `octicons` configuration obj
 
 ```js
 // ember-cli-build.js
-  let app = new EmberAddon(defaults, {
-    octicons: {
-      icons: ['alert', 'bell', 'mark-github', /* etc... */]
-    }
-  });
+let app = new EmberAddon(defaults, {
+  octicons: {
+    icons: ["alert", "bell", "mark-github" /* etc... */],
+  },
+});
 ```
 
 Now the SVG file can be used like any other asset:
@@ -39,12 +39,12 @@ By default, SVG files will be imported into the `images/svg/octicons` directory.
 
 ```js
 // ember-cli-build.js
-  let app = new EmberAddon(defaults, {
-    octicons: {
-      destDir: 'some/other/folder',
-      icons: ['alert', 'bell', 'mark-github', /* etc... */]
-    }
-  });
+let app = new EmberAddon(defaults, {
+  octicons: {
+    destDir: "some/other/folder",
+    icons: ["alert", "bell", "mark-github" /* etc... */],
+  },
+});
 ```
 
 ### Using Octicons with Ember SVGJar
@@ -53,17 +53,17 @@ If you would rather use [ember-svg-jar](https://github.com/ivanvotti/ember-svg-j
 
 ```js
 // ember-cli-build.js
-  let app = new EmberAddon(defaults, {
-    octicons: {
-      icons: null // don't import any SVG files at build time
-    },
-    svgJar: {
-      sourceDirs: [
-        'public', // default SVGJar lookup directory
-        'node_modules/@primer/octicons/build/svg'
-      ]
-    }
-  });
+let app = new EmberAddon(defaults, {
+  octicons: {
+    icons: null, // don't import any SVG files at build time
+  },
+  svgJar: {
+    sourceDirs: [
+      "public", // default SVGJar lookup directory
+      "node_modules/@primer/octicons/build/svg",
+    ],
+  },
+});
 ```
 
 And then use Ember SVGJar's `{{svg-jar}}` helper:
