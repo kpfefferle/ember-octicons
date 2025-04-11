@@ -4546,9 +4546,9 @@ ember-template-imports@^4.3.0:
     ember-cli-version-checker "^5.1.2"
 
 ember-template-lint@^7.0.1:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-7.0.2.tgz#359f0d7aa6af5e56301977a03307af09926da4e9"
-  integrity sha512-3YhHVLqD48GK1M9ZXf3L+eH2800FYCtvENCLzazgiAlU50towMKCV9Dy+lF9XlXzQZSJZzxR16IGCgv8rkiesw==
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-7.0.5.tgz#a662da9a54cbd65f1bd78279cbedaf6b4261578c"
+  integrity sha512-PRhtq6UZRbm3ishl+3/jOxQY9pr2l2QQbY03MJExQWqhUmrXJ8fNkeqSyXOsjEr1Zl+lR/8CjyHccAG0lbBOgw==
   dependencies:
     "@babel/generator" "^7.26.9"
     "@babel/parser" "^7.21.8"
