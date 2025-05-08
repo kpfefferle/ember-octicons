@@ -977,9 +977,9 @@
     semver "^7.3.8"
 
 "@embroider/macros@^1.0.0", "@embroider/macros@^1.12.2", "@embroider/macros@^1.16.12", "@embroider/macros@^1.16.5", "@embroider/macros@^1.16.9":
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.17.1.tgz#2cc9f55706af17e7569900517a68f49e814a3d65"
-  integrity sha512-pi039RDy2CvgM+RwJ9NMFU4wYMKlSp9p+WyHFfQpZ2e/HL78O1KM1+MEaKnIve6MrXvo7QD7/Kn6MpMTzV1MSQ==
+  version "1.17.3"
+  resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.17.3.tgz#1af5fe61bfc99eb5f9060d4d374bfb94a1e29fb2"
+  integrity sha512-ag0QUiawjSwEqOhNqscZN5O2Q0gjQ6TS5weepamn4MGGVwIC4/9MpLUAZKmbVh5dmPhCvRp9jTmYvCykx0vB2Q==
   dependencies:
     "@embroider/shared-internals" "3.0.0"
     assert-never "^1.2.1"
