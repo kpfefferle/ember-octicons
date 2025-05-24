@@ -23,6 +23,4 @@
 /tests/
 /tsconfig.declarations.json
 /tsconfig.json
-/yarn-error.log
-/yarn.lock
 .gitkeep

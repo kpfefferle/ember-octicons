@@ -19,16 +19,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Node
-        uses: actions/setup-node@v3
+        uses: volta-cli/action@v4
         with:
-          node-version: 20
-          cache: yarn
+          node-version: 18
+      - name: Install pnpm
+        run: volta install pnpm@10
       - name: Install Dependencies
-        run: yarn install
+        run: pnpm install
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
       - name: Run Tests
-        run: yarn test:ember
+        run: pnpm test:ember
 
   floating:
     name: "Floating Dependencies"
@@ -37,14 +38,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Install Node
+        uses: volta-cli/action@v4
         with:
-          node-version: 20
-          cache: yarn
+          node-version: 18
+      - name: Install pnpm
+        run: volta install pnpm@10
       - name: Install Dependencies
-        run: yarn install --no-lockfile
+        run: pnpm install --no-lockfile
       - name: Run Tests
-        run: yarn test:ember
+        run: pnpm test:ember
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
@@ -65,11 +68,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Node
-        uses: actions/setup-node@v3
+        uses: volta-cli/action@v4
         with:
-          node-version: 20
-          cache: yarn
+          node-version: 18
+      - name: Install pnpm
+        run: volta install pnpm@10
       - name: Install Dependencies
-        run: yarn install
+        run: pnpm install
       - name: Run Tests
-        run: yarn ember try:one ${{ matrix.try-scenario }}
+        run: pnpm ember try:one ${{ matrix.try-scenario }}
