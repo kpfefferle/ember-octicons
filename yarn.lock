@@ -1577,24 +1577,24 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pnpm/constants@10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@pnpm/constants/-/constants-10.0.0.tgz#a7b42d96965d6a995af80aa3b07997636e4a3999"
-  integrity sha512-dxIXcW1F1dxIGfye2JXE7Q8WVwYB0axVzdBOkvE1WKIVR4xjB8e6k/Dkjo7DpbyfW5Vu2k21p6dyM32YLSAWoQ==
+"@pnpm/constants@1001.1.0":
+  version "1001.1.0"
+  resolved "https://registry.yarnpkg.com/@pnpm/constants/-/constants-1001.1.0.tgz#d08d0f39aca39f701fae1df9e017af676cdeebf5"
+  integrity sha512-xb9dfSGi1qfUKY3r4Zy9JdC9+ZeaDxwfE7HrrGIEsBVY1hvIn6ntbR7A97z3nk44yX7vwbINNf9sizTp0WEtEw==
 
-"@pnpm/error@6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@pnpm/error/-/error-6.0.3.tgz#318282ce77d097864370bca6f9b987dff5a5fb84"
-  integrity sha512-OIYhG7HQh4zUFh2s8/6bp7glVRjNxms7bpzXVOLV7pyRa+rSYFmqJ8zDsBC64k58nuaxS85Ip+SCDjFxsFGeOg==
+"@pnpm/error@1000.0.2":
+  version "1000.0.2"
+  resolved "https://registry.yarnpkg.com/@pnpm/error/-/error-1000.0.2.tgz#319ae3f95622ab7914996b6ff53bcbfe7bfff84e"
+  integrity sha512-2SfE4FFL73rE1WVIoESbqlj4sLy5nWW4M/RVdHvCRJPjlQHa9MH7m7CVJM204lz6I+eHoB+E7rL3zmpJR5wYnQ==
   dependencies:
-    "@pnpm/constants" "10.0.0"
+    "@pnpm/constants" "1001.1.0"
 
-"@pnpm/find-workspace-dir@^7.0.2":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@pnpm/find-workspace-dir/-/find-workspace-dir-7.0.3.tgz#0c7fe41397ed453f40f1a71604331b434342d4c2"
-  integrity sha512-eGjkyHSufkHyZ66WpygWnslcRePB0U1lJg1dF3rgWqTChpregYoDyNGDzK7l9Gk+CHVgGZZS5aWp7uKKVmAAEg==
+"@pnpm/find-workspace-dir@^1000.1.0":
+  version "1000.1.0"
+  resolved "https://registry.yarnpkg.com/@pnpm/find-workspace-dir/-/find-workspace-dir-1000.1.0.tgz#6539aa981cea88d0f7c530af65219d0453a8770a"
+  integrity sha512-K5iG/z0SLV6bVW1jIYvbNBI6vWAD6ETJKyWj/wwHr7hxloxtm9xJCGbe/41pmM9nfFFUPbr1Z0YOi4q9yWkj6g==
   dependencies:
-    "@pnpm/error" "6.0.3"
+    "@pnpm/error" "1000.0.2"
     find-up "^5.0.0"
 
 "@primer/octicons@^19.1.0":
@@ -3485,7 +3485,7 @@ compressible@~2.0.18:
   dependencies:
     mime-db ">= 1.43.0 < 2"
 
-compression@^1.7.4:
+compression@^1.7.4, compression@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/compression/-/compression-1.8.0.tgz#09420efc96e11a0f44f3a558de59e321364180f7"
   integrity sha512-k6WLKfunuqCYD3t6AsuPGvQWaKwuLLh2/xHNcX4qE+vIfDNXpSqnrhwA7O53R7WVQUnt8dVAIW+YHr7xTgOgGA==
@@ -4364,12 +4364,12 @@ ember-cli-version-checker@^5.1.2:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-cli@~6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-6.3.0.tgz#609363f4b93eedf01a4f1b4cf27dda01d36ea8d2"
-  integrity sha512-eTj96ngnVfUFbz9ctJXTgy8MJ9f6xkEx//7mDpfnnK5tyVJEqhrbttYZEqtpXZQM8UsCAv5vRURO8ZIsXfKRgQ==
+ember-cli@~6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-6.4.0.tgz#2fcca99265c557eb3d1590ee3f862aea3ac87a6e"
+  integrity sha512-adcz01uGDrqBPniZrrYx6+tHe58ikc6j+cbX4+3aTG2OVJvQSL+LeisI6ixxtEZeklHRFB6FE6U1etTS6nRVfQ==
   dependencies:
-    "@pnpm/find-workspace-dir" "^7.0.2"
+    "@pnpm/find-workspace-dir" "^1000.1.0"
     babel-remove-types "^1.0.1"
     broccoli "^3.5.2"
     broccoli-concat "^4.2.5"
@@ -4388,10 +4388,10 @@ ember-cli@~6.3.0:
     chalk "^4.1.2"
     ci-info "^4.0.0"
     clean-base-url "^1.0.0"
-    compression "^1.7.4"
+    compression "^1.8.0"
     configstore "^5.0.1"
     console-ui "^3.1.2"
-    content-tag "^3.1.0"
+    content-tag "^3.1.1"
     core-object "^3.1.5"
     dag-map "^2.0.2"
     diff "^7.0.0"
@@ -4435,11 +4435,11 @@ ember-cli@~6.3.0:
     promise-map-series "^0.3.0"
     promise.hash.helper "^1.0.8"
     quick-temp "^0.1.8"
-    resolve "^1.22.1"
+    resolve "^1.22.10"
     resolve-package-path "^4.0.3"
     safe-stable-stringify "^2.4.3"
     sane "^5.0.1"
-    semver "^7.7.0"
+    semver "^7.7.1"
     silent-error "^1.1.1"
     sort-package-json "^2.12.0"
     symlink-or-copy "^1.3.1"
@@ -8844,7 +8844,7 @@ resolve.exports@^2.0.2:
   resolved "https://registry.yarnpkg.com/resolve.exports/-/resolve.exports-2.0.3.tgz#41955e6f1b4013b7586f873749a635dea07ebe3f"
   integrity sha512-OcXjMsGdhL4XnbShKpAcSqPMzQoYkYyhbEaeSko47MjRP9NfEQMhZkXL1DoFlt9LWQn4YttrdnV6X2OiyzBi+A==
 
-resolve@^1.10.0, resolve@^1.11.1, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.17.0, resolve@^1.20.0, resolve@^1.22.0, resolve@^1.22.1, resolve@^1.22.3, resolve@^1.22.8, resolve@^1.4.0:
+resolve@^1.10.0, resolve@^1.11.1, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.17.0, resolve@^1.20.0, resolve@^1.22.0, resolve@^1.22.10, resolve@^1.22.3, resolve@^1.22.8, resolve@^1.4.0:
   version "1.22.10"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.10.tgz#b663e83ffb09bbf2386944736baae803029b8b39"
   integrity sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==
@@ -9103,10 +9103,10 @@ semver@^6.0.0, semver@^6.2.0, semver@^6.3.0, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.8, semver@^7.5.2, semver@^7.5.4, semver@^7.6.0, semver@^7.6.3, semver@^7.7.0:
-  version "7.7.1"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.1.tgz#abd5098d82b18c6c81f6074ff2647fd3e7220c9f"
-  integrity sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==
+semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.8, semver@^7.5.2, semver@^7.5.4, semver@^7.6.0, semver@^7.6.3, semver@^7.7.1:
+  version "7.7.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.2.tgz#67d99fdcd35cec21e6f8b87a7fd515a33f982b58"
+  integrity sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==
 
 send@0.19.0:
   version "0.19.0"
