@@ -83,7 +83,7 @@ importers:
         version: 3.3.3(ember-cli@6.5.0(handlebars@4.7.8)(underscore@1.13.7))
       ember-cli-deprecation-workflow:
         specifier: ^3.3.0
-        version: 3.3.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+        version: 3.4.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-cli-inject-live-reload:
         specifier: ^2.1.0
         version: 2.1.0
@@ -2457,11 +2457,11 @@ packages:
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
 
-  ember-cli-deprecation-workflow@3.3.0:
-    resolution: {integrity: sha512-AZTOv+xftPXNov+X7k/JZFMd5/Suzkuvg5Zc1W3MoJb+kjIwW/3sieBOXEbt7aMq9Px4ixb9FSrFPNlzggV4qA==}
+  ember-cli-deprecation-workflow@3.4.0:
+    resolution: {integrity: sha512-Ksrmib4mjD4xa0dqFgxJLBwkSp9EVYH6jSqe2NpODlBKEAZhsVzQj5wKPnC1dXfK3Erq/r1Fh3q4g46FZiCUiw==}
     engines: {node: '>= 18'}
     peerDependencies:
-      ember-source: '>= 4.0.0'
+      ember-source: '>= 3.28.0'
 
   ember-cli-get-component-path-option@1.0.0:
     resolution: {integrity: sha512-k47TDwcJ2zPideBCZE8sCiShSxQSpebY2BHcX2DdipMmBox5gsfyVrbKJWIHeSTTKyEUgmBIvQkqTOozEziCZA==}
@@ -8655,7 +8655,7 @@ snapshots:
       resolve: 1.22.10
       semver: 5.7.2
 
-  ember-cli-deprecation-workflow@3.3.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
+  ember-cli-deprecation-workflow@3.4.0(ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)):
     dependencies:
       '@babel/core': 7.27.4
       ember-cli-babel: 8.2.0(@babel/core@7.27.4)
