@@ -62,7 +62,7 @@ importers:
         version: 1.1.2
       '@primer/octicons':
         specifier: ^19.1.0
-        version: 19.15.3
+        version: 19.21.0
       broccoli-asset-rev:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1039,8 +1039,8 @@ packages:
     resolution: {integrity: sha512-K5iG/z0SLV6bVW1jIYvbNBI6vWAD6ETJKyWj/wwHr7hxloxtm9xJCGbe/41pmM9nfFFUPbr1Z0YOi4q9yWkj6g==}
     engines: {node: '>=18.12'}
 
-  '@primer/octicons@19.15.3':
-    resolution: {integrity: sha512-SVD0JbTzabLqLx4d5Cl3cyY+i0u3j5/lI6P3FyNkkJb9Z4VAQ+mBvl7WgK0ZFEXBsLc2gxnoYXvC3TkNSEz1NQ==}
+  '@primer/octicons@19.21.0':
+    resolution: {integrity: sha512-87buZ9aPlWbbHvTTzPAy9zqqGZpCc/VH+Q6q9OsZou6zCaExjmsINj6rWjP6FxNK5ZWHfF0UFNKQCai72lhaLA==}
 
   '@simple-dom/document@1.4.0':
     resolution: {integrity: sha512-/RUeVH4kuD3rzo5/91+h4Z1meLSLP66eXqpVAw/4aZmYozkeqUkMprq0znL4psX/adEed5cBgiNJcfMz/eKZLg==}
@@ -6886,7 +6886,7 @@ snapshots:
       '@pnpm/error': 1000.0.2
       find-up: 5.0.0
 
-  '@primer/octicons@19.15.3':
+  '@primer/octicons@19.21.0':
     dependencies:
       object-assign: 4.1.1
 
