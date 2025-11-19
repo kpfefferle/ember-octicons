@@ -134,7 +134,7 @@ importers:
         version: 17.21.0(eslint@9.30.1)(typescript@5.8.3)
       eslint-plugin-qunit:
         specifier: ^8.1.2
-        version: 8.2.3(eslint@9.30.1)
+        version: 8.2.5(eslint@9.30.1)
       globals:
         specifier: ^16.0.0
         version: 16.3.0
@@ -2713,8 +2713,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-qunit@8.2.3:
-    resolution: {integrity: sha512-rBDTZONPHbTRHsqbQl0ZZkaUpWRaIBXZRyGfBViIY0Ra+GBhKJBQlsLFFWpqnJF+lWau7hyLO/aeO8zD8nEzYQ==}
+  eslint-plugin-qunit@8.2.5:
+    resolution: {integrity: sha512-qr7RJCYImKQjB+39q4q46i1l7p1V3joHzBE5CAYfxn5tfVFjrnjn/tw7q/kDyweU9kAIcLul0Dx/KWVUCb3BgA==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
 
   eslint-scope@5.1.1:
@@ -9212,7 +9212,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  eslint-plugin-qunit@8.2.3(eslint@9.30.1):
+  eslint-plugin-qunit@8.2.5(eslint@9.30.1):
     dependencies:
       eslint-utils: 3.0.0(eslint@9.30.1)
       requireindex: 1.2.0
