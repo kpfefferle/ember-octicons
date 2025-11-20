@@ -98,7 +98,7 @@ importers:
         version: 3.0.1(ember-source@6.8.2(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-page-title:
         specifier: ^9.0.2
-        version: 9.0.2
+        version: 9.0.3
       ember-qunit:
         specifier: ^9.0.3
         version: 9.0.3(@ember/test-helpers@5.2.2(@babel/core@7.28.0))(qunit@2.24.1)
@@ -2584,8 +2584,8 @@ packages:
     peerDependencies:
       ember-source: '>= 5'
 
-  ember-page-title@9.0.2:
-    resolution: {integrity: sha512-ACklH6hemNB6tDAiwGo4e0tFIqVrAkTNqRmlLtLABlh+GynH7xkWm9q4fyc4Ysg9R1jP8OrsKcxWRittshRatA==}
+  ember-page-title@9.0.3:
+    resolution: {integrity: sha512-fedRHUsvq8tIZgOii8jTrfAyeq+la/9H5eAzhNNwEyzo7nDMmqK2SxsyBUGXprd8fOacsPabLlzlucMi/4mUpA==}
     engines: {node: 16.* || >= 18}
 
   ember-qunit@9.0.3:
@@ -5918,7 +5918,7 @@ snapshots:
       '@babel/core': 7.28.0
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-plugin-utils': 7.27.1
-      debug: 4.4.3
+      debug: 4.4.1
       lodash.debounce: 4.0.8
       resolve: 1.22.11
     transitivePeerDependencies:
@@ -6662,7 +6662,7 @@ snapshots:
 
   '@ember/test-waiters@4.1.0':
     dependencies:
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.0
       '@embroider/macros': 1.18.0
     transitivePeerDependencies:
       - '@glint/template'
@@ -9051,9 +9051,9 @@ snapshots:
     dependencies:
       ember-source: 6.8.2(@glimmer/component@2.0.0)(rsvp@4.8.5)
 
-  ember-page-title@9.0.2:
+  ember-page-title@9.0.3:
     dependencies:
-      '@embroider/addon-shim': 1.10.0
+      '@embroider/addon-shim': 1.10.2
       '@simple-dom/document': 1.4.0
     transitivePeerDependencies:
       - supports-color
@@ -9352,7 +9352,7 @@ snapshots:
   eslint-compat-utils@0.5.1(eslint@9.30.1):
     dependencies:
       eslint: 9.30.1
-      semver: 7.7.3
+      semver: 7.7.2
 
   eslint-config-prettier@10.1.5(eslint@9.30.1):
     dependencies:
@@ -11043,7 +11043,7 @@ snapshots:
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
-      semver: 7.7.3
+      semver: 7.7.2
       shellwords: 0.1.1
       uuid: 8.3.2
       which: 2.0.2
