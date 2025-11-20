@@ -37,7 +37,7 @@
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
     "ember-template-imports": "^4.3.0",
-    "glob": "^11.0.2",
+    "glob": "^13.0.0",
     "validate-peer-dependencies": "^2.0.0"
   },
   "peerDependencies": {
