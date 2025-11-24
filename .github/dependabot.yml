@@ -1,8 +1,36 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "07:00"
-  open-pull-requests-limit: 99
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "07:00"
+    groups:
+      babel:
+        applies-to: version-updates
+        patterns:
+          - "@babel/*"
+      eslint:
+        applies-to: version-updates
+        patterns:
+          - "eslint*"
+      qunit:
+        applies-to: version-updates
+        patterns:
+          - "qunit*"
+      stylelint:
+        applies-to: version-updates
+        patterns:
+          - "stylelint*"
+    open-pull-requests-limit: 99
+    reviewers:
+      - kpfefferle
+  - package-ecosystem: "github-actions"
+    # Workflow files stored in the
+    # default location of `.github/workflows`
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+      - kpfefferle
