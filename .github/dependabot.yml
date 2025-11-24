@@ -13,6 +13,7 @@ updates:
       eslint:
         applies-to: version-updates
         patterns:
+          - "@eslint/*"
           - "eslint*"
       qunit:
         applies-to: version-updates
