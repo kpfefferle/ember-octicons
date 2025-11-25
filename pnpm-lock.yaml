@@ -125,7 +125,7 @@ importers:
         version: 9.39.1
       eslint-config-prettier:
         specifier: ^10.0.1
-        version: 10.1.5(eslint@9.39.1)
+        version: 10.1.8(eslint@9.39.1)
       eslint-plugin-ember:
         specifier: ^12.7.4
         version: 12.7.4(@babel/core@7.28.5)(eslint@9.39.1)(typescript@5.8.3)
@@ -2765,8 +2765,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-prettier@10.1.5:
-    resolution: {integrity: sha512-zc1UmCpNltmVY34vuLRV61r1K27sWuX39E+uyUnY8xS2Bex88VV9cugG+UZbRSRGtGyFboj+D8JODyme1plMpw==}
+  eslint-config-prettier@10.1.8:
+    resolution: {integrity: sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -4671,6 +4671,7 @@ packages:
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
     deprecated: |-
       You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
       (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
 
   qified@0.5.2:
@@ -9397,7 +9398,7 @@ snapshots:
       eslint: 9.39.1
       semver: 7.7.2
 
-  eslint-config-prettier@10.1.5(eslint@9.39.1):
+  eslint-config-prettier@10.1.8(eslint@9.39.1):
     dependencies:
       eslint: 9.39.1
 
