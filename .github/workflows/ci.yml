@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Install Node
-        uses: volta-cli/action@v4
+        uses: volta-cli/action@v5
         with:
           node-version: 20
       - name: Install pnpm
@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Install Node
-        uses: volta-cli/action@v4
+        uses: volta-cli/action@v5
         with:
           node-version: 20
       - name: Install pnpm
@@ -68,7 +68,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Install Node
-        uses: volta-cli/action@v4
+        uses: volta-cli/action@v5
         with:
           node-version: 20
       - name: Install pnpm
