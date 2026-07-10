@@ -56,7 +56,7 @@
     "@glimmer/tracking": "^1.0.4",
     "@primer/octicons": "^19.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.3",
     "ember-auto-import": "^2.12.0",
     "ember-cli": "~6.9.1",
     "ember-cli-clean-css": "^3.0.0",
