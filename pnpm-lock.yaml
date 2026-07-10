@@ -101,7 +101,7 @@ importers:
         version: 9.0.3
       ember-qunit:
         specifier: ^9.0.4
-        version: 9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.25.0)
+        version: 9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0)
       ember-resolver:
         specifier: ^13.1.1
         version: 13.1.1
@@ -149,10 +149,10 @@ importers:
         version: 2.1.2(prettier@3.7.4)
       qunit:
         specifier: ^2.24.3
-        version: 2.25.0
+        version: 2.26.0
       qunit-dom:
         specifier: ^3.5.0
-        version: 3.5.0
+        version: 3.5.1
       stylelint:
         specifier: ^16.26.1
         version: 16.26.1(typescript@5.8.3)
@@ -2032,8 +2032,8 @@ packages:
     resolution: {integrity: sha512-pFGrxThWcWQ2MsAz6RtgeWe4NK2kUE1WfsrvvlctdII745EW9I0yflqhe7++M5LEc7bV2c/9/5zc8sFcpL0Drw==}
     engines: {node: '>=0.1.90'}
 
-  commander@14.0.2:
-    resolution: {integrity: sha512-TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==}
+  commander@14.0.3:
+    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
   commander@2.20.3:
@@ -4645,14 +4645,14 @@ packages:
   quick-temp@0.1.9:
     resolution: {integrity: sha512-yI0h7tIhKVObn03kD+Ln9JFi4OljD28lfaOsTdfpTR0xzrhGOod+q66CjGafUqYX2juUfT9oHIGrTBBo22mkRA==}
 
-  qunit-dom@3.5.0:
-    resolution: {integrity: sha512-eemLM5bflWafzmBnwlYbjf9NrjEkV2j7NO7mTvsMzQBJbEaq2zFvUFDtHV9JaK0TT5mgRZt034LCUewYGmjjjQ==}
+  qunit-dom@3.5.1:
+    resolution: {integrity: sha512-ZnvTADVXASdjLxrUDuS/8NaOzadhxN+fZgafjuQV1EOMFd3dJqLkP0RqsGdAxQBxZ7KzKg57AAJO20dM6/PxkA==}
 
   qunit-theme-ember@1.0.0:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
 
-  qunit@2.25.0:
-    resolution: {integrity: sha512-MONPKgjavgTqArCwZOEz8nEMbA19zNXIp5ZOW9rPYj5cbgQp0fiI36c9dPTSzTRRzx+KcfB5eggYB/ENqxi0+w==}
+  qunit@2.26.0:
+    resolution: {integrity: sha512-KSv16YomcYmiK90qTOJl3Bm5IvTf2upqQDdBQWCvSQWe94FWobnUgKOpvpvZdG7VkDt3TJSI8k8g9+GGGEd7Fw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -8131,7 +8131,7 @@ snapshots:
       ansi-html: 0.0.9
       broccoli-node-info: 2.2.0
       broccoli-source: 3.0.1
-      commander: 14.0.2
+      commander: 14.0.3
       connect: 3.7.0
       console-ui: 3.1.2
       findup-sync: 5.0.0
@@ -8361,7 +8361,7 @@ snapshots:
 
   colors@1.0.3: {}
 
-  commander@14.0.2: {}
+  commander@14.0.3: {}
 
   commander@2.20.3: {}
 
@@ -9135,12 +9135,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.25.0):
+  ember-qunit@9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0):
     dependencies:
       '@ember/test-helpers': 5.4.1(@babel/core@7.29.6)
       '@embroider/addon-shim': 1.10.0
       '@embroider/macros': 1.19.6
-      qunit: 2.25.0
+      qunit: 2.26.0
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
       - '@glint/template'
@@ -11461,13 +11461,13 @@ snapshots:
       rimraf: 5.0.10
       underscore.string: 3.3.6
 
-  qunit-dom@3.5.0:
+  qunit-dom@3.5.1:
     dependencies:
       dom-element-descriptors: 0.5.1
 
   qunit-theme-ember@1.0.0: {}
 
-  qunit@2.25.0:
+  qunit@2.26.0:
     dependencies:
       commander: 7.2.0
       node-watch: 0.7.3
