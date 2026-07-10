@@ -47,7 +47,7 @@ importers:
         version: 5.4.1(@babel/core@7.29.6)
       '@embroider/macros':
         specifier: ^1.19.5
-        version: 1.19.6
+        version: 1.20.5(@babel/core@7.29.6)
       '@embroider/test-setup':
         specifier: ^4.0.0
         version: 4.0.0
@@ -101,7 +101,7 @@ importers:
         version: 9.0.3
       ember-qunit:
         specifier: ^9.0.4
-        version: 9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0)
+        version: 9.0.4(@babel/core@7.29.6)(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0)
       ember-resolver:
         specifier: ^13.1.1
         version: 13.1.1
@@ -113,7 +113,7 @@ importers:
         version: 3.0.0
       ember-svg-jar:
         specifier: ^2.3.3
-        version: 2.7.1
+        version: 2.7.1(@babel/core@7.29.6)
       ember-template-lint:
         specifier: ^7.0.1
         version: 7.9.3
@@ -871,8 +871,8 @@ packages:
     resolution: {integrity: sha512-GYbaiC1v9inbiwVg5s+Sd14Jc66NYxg23mEOocgWAZFCtOfhMnRLaLAA6SytW76myVVYImGHX5PFK4PVuH2yng==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  '@embroider/macros@1.19.6':
-    resolution: {integrity: sha512-yPf8lD/gRZmcxms66CCKuZuvWMJ0g/hdCE6P8FZsyewR3So6pxgdgOFp0zk2w5d34jS1ejBtxLNREZbBTELpzw==}
+  '@embroider/macros@1.20.5':
+    resolution: {integrity: sha512-JjIynmob1HbOwVG5uvwrOWecf48Vf9dltKL5C9x5Q6gEoLZJln6iG8D9YBM9EO24Oi8Ftw+oS7IJjA7TFvMLCA==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
       '@glint/template': ^1.0.0
@@ -886,10 +886,6 @@ packages:
 
   '@embroider/shared-internals@2.9.2':
     resolution: {integrity: sha512-d96ub/WkS1Gx6dRDxZ0mCRPwFAHIMlMr2iti6uTYxTFzC85Wgt6j7bYr6ppkEuwEwKQVyzKRT0kTsJz6P74caQ==}
-    engines: {node: 12.* || 14.* || >= 16}
-
-  '@embroider/shared-internals@3.0.2':
-    resolution: {integrity: sha512-/SusdG+zgosc3t+9sPFVKSFOYyiSgLfXOT6lYNWoG1YtnhWDxlK4S8leZ0jhcVjemdaHln5rTyxCnq8oFLxqpQ==}
     engines: {node: 12.* || 14.* || >= 16}
 
   '@embroider/shared-internals@3.1.1':
@@ -6762,9 +6758,9 @@ snapshots:
 
   '@ember/test-helpers@5.4.1(@babel/core@7.29.6)':
     dependencies:
-      '@ember/test-waiters': 4.1.0
+      '@ember/test-waiters': 4.1.0(@babel/core@7.29.6)
       '@embroider/addon-shim': 1.10.2
-      '@embroider/macros': 1.19.6
+      '@embroider/macros': 1.20.5(@babel/core@7.29.6)
       '@simple-dom/interface': 1.4.0
       decorator-transforms: 2.3.0(@babel/core@7.29.6)
       dom-element-descriptors: 0.5.1
@@ -6773,11 +6769,12 @@ snapshots:
       - '@glint/template'
       - supports-color
 
-  '@ember/test-waiters@4.1.0':
+  '@ember/test-waiters@4.1.0(@babel/core@7.29.6)':
     dependencies:
       '@embroider/addon-shim': 1.10.2
-      '@embroider/macros': 1.19.6
+      '@embroider/macros': 1.20.5(@babel/core@7.29.6)
     transitivePeerDependencies:
+      - '@babel/core'
       - '@glint/template'
       - supports-color
 
@@ -6808,17 +6805,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/macros@1.19.6':
+  '@embroider/macros@1.20.5(@babel/core@7.29.6)':
     dependencies:
-      '@embroider/shared-internals': 3.0.2
+      '@embroider/shared-internals': 3.1.1
       assert-never: 1.4.0
       babel-import-util: 3.0.1
-      ember-cli-babel: 7.26.11
+      ember-cli-babel: 8.3.1(@babel/core@7.29.6)
       find-up: 5.0.0
-      lodash: 4.17.21
-      resolve: 1.22.11
-      semver: 7.7.3
+      lodash: 4.18.1
+      resolve: 1.22.12
+      semver: 7.8.5
     transitivePeerDependencies:
+      - '@babel/core'
       - supports-color
 
   '@embroider/reverse-exports@0.2.0':
@@ -6839,24 +6837,6 @@ snapshots:
       pkg-entry-points: 1.1.2
       resolve-package-path: 4.0.3
       semver: 7.8.5
-      typescript-memoize: 1.1.1
-    transitivePeerDependencies:
-      - supports-color
-
-  '@embroider/shared-internals@3.0.2':
-    dependencies:
-      babel-import-util: 3.0.1
-      debug: 4.4.3
-      ember-rfc176-data: 0.3.18
-      fs-extra: 9.1.0
-      is-subdir: 1.2.0
-      js-string-escape: 1.0.1
-      lodash: 4.17.21
-      minimatch: 3.1.5
-      pkg-entry-points: 1.1.2
-      resolve-package-path: 4.0.3
-      resolve.exports: 2.0.3
-      semver: 7.7.3
       typescript-memoize: 1.1.1
     transitivePeerDependencies:
       - supports-color
@@ -7703,7 +7683,7 @@ snapshots:
       glob: 7.2.3
       pkg-up: 2.0.0
       reselect: 3.0.1
-      resolve: 1.22.11
+      resolve: 1.22.12
 
   babel-plugin-module-resolver@5.0.3:
     dependencies:
@@ -8830,7 +8810,7 @@ snapshots:
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.29.6)
       '@babel/plugin-transform-class-static-block': 7.29.7(@babel/core@7.29.6)
       '@babel/preset-env': 7.29.7(@babel/core@7.29.6)
-      '@embroider/macros': 1.19.6
+      '@embroider/macros': 1.20.5(@babel/core@7.29.6)
       '@embroider/reverse-exports': 0.2.0
       '@embroider/shared-internals': 2.9.2
       babel-loader: 8.4.1(@babel/core@7.29.6)(webpack@5.104.1)
@@ -9238,14 +9218,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@9.0.4(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0):
+  ember-qunit@9.0.4(@babel/core@7.29.6)(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0):
     dependencies:
       '@ember/test-helpers': 5.4.1(@babel/core@7.29.6)
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.19.6
+      '@embroider/macros': 1.20.5(@babel/core@7.29.6)
       qunit: 2.26.0
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
+      - '@babel/core'
       - '@glint/template'
       - supports-color
 
@@ -9318,9 +9299,9 @@ snapshots:
       - rsvp
       - supports-color
 
-  ember-svg-jar@2.7.1:
+  ember-svg-jar@2.7.1(@babel/core@7.29.6):
     dependencies:
-      '@embroider/macros': 1.19.6
+      '@embroider/macros': 1.20.5(@babel/core@7.29.6)
       broccoli-caching-writer: 3.0.3
       broccoli-concat: 4.2.5
       broccoli-funnel: 3.0.8
@@ -9336,6 +9317,7 @@ snapshots:
       lodash: 4.17.21
       safe-stable-stringify: 2.5.0
     transitivePeerDependencies:
+      - '@babel/core'
       - '@glint/template'
       - supports-color
 
@@ -11730,7 +11712,7 @@ snapshots:
   resolve-package-path@2.0.0:
     dependencies:
       path-root: 0.1.1
-      resolve: 1.22.11
+      resolve: 1.22.12
 
   resolve-package-path@3.1.0:
     dependencies:
