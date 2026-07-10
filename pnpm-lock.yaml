@@ -44,7 +44,7 @@ importers:
         version: 3.0.0(@types/node@25.0.3)
       '@ember/test-helpers':
         specifier: ^5.4.1
-        version: 5.4.1(@babel/core@7.29.6)
+        version: 5.4.3(@babel/core@7.29.6)
       '@embroider/macros':
         specifier: ^1.19.5
         version: 1.20.5(@babel/core@7.29.6)
@@ -101,7 +101,7 @@ importers:
         version: 9.0.3
       ember-qunit:
         specifier: ^9.0.4
-        version: 9.0.4(@babel/core@7.29.6)(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0)
+        version: 9.0.4(@babel/core@7.29.6)(@ember/test-helpers@5.4.3(@babel/core@7.29.6))(qunit@2.26.0)
       ember-resolver:
         specifier: ^13.1.1
         version: 13.2.0
@@ -853,11 +853,11 @@ packages:
     resolution: {integrity: sha512-HMQqZoBb16I4NyHfQglIYjopSG6folcEJah2WPa0FuolWRA/8cS5ozQmFK5BQx7cijTQJxj6viLpQK9KrXuYdw==}
     engines: {node: '>= 20.19'}
 
-  '@ember/test-helpers@5.4.1':
-    resolution: {integrity: sha512-BUdT91ra+QibEWAUwtZmvTGFoDHJCxDU+fkQENA8Zs0FR3pZiICxxP/fgdlNExCjjdm1letut7ENoueBuDdixQ==}
+  '@ember/test-helpers@5.4.3':
+    resolution: {integrity: sha512-WeNABJsXBidEXP87AH5gaI/KAyb0zEUYJxWa31A/Us5lqg85E3tPlHjBwCrlReOrJbSgvvArMnrdCwt7TRpjPQ==}
 
-  '@ember/test-waiters@4.1.0':
-    resolution: {integrity: sha512-qRFA0OumYv7/C3hmx4ETC2dlPzyD549D+naPhcrnV2xCnc3AZlKouWyoFnNF+Cje918kRp9aEefVgV3vmGL5Bg==}
+  '@ember/test-waiters@4.1.2':
+    resolution: {integrity: sha512-zJwFaHLHjJn6mKoXYVM1SEyMT+U1JpaaSKg3JBmxHJwiIoJRI5djJ/CE33Z7N09mk5JfXd2xdhbd9LBWdlvAzg==}
 
   '@embroider/addon-shim@1.10.0':
     resolution: {integrity: sha512-gcJuHiXgnrzaU8NyU+2bMbtS6PNOr5v5B8OXBqaBvTCsMpXLvKo8OBOQFCoUN0rPX2J6VaFqrbi/371sMvzZug==}
@@ -2478,9 +2478,6 @@ packages:
   decompress-response@3.3.0:
     resolution: {integrity: sha512-BzRPQuY1ip+qDonAOz42gRm/pg9F768C+npV/4JOsxRC2sq+Rlk+Q4ZCAsOhnIaMrgarILY+RMUIvMmmX1qAEA==}
     engines: {node: '>=4'}
-
-  decorator-transforms@2.3.0:
-    resolution: {integrity: sha512-jo8c1ss9yFPudHuYYcrJ9jpkDZIoi+lOGvt+Uyp9B+dz32i50icRMx9Bfa8hEt7TnX1FyKWKkjV+cUdT/ep2kA==}
 
   decorator-transforms@2.4.0:
     resolution: {integrity: sha512-IB+0RqnJpuS7ndH4dVY5dfWTZsrCzN3avWFdjSiET0uT2U24jKywjpVEK97TflnZkZgiSRfmeqc1WfS+1CI23w==}
@@ -6755,26 +6752,21 @@ snapshots:
       - '@types/node'
       - supports-color
 
-  '@ember/test-helpers@5.4.1(@babel/core@7.29.6)':
+  '@ember/test-helpers@5.4.3(@babel/core@7.29.6)':
     dependencies:
-      '@ember/test-waiters': 4.1.0(@babel/core@7.29.6)
-      '@embroider/addon-shim': 1.10.2
-      '@embroider/macros': 1.20.5(@babel/core@7.29.6)
+      '@ember/test-waiters': 4.1.2
+      '@embroider/addon-shim': 1.10.3
       '@simple-dom/interface': 1.4.0
-      decorator-transforms: 2.3.0(@babel/core@7.29.6)
+      decorator-transforms: 2.4.0(@babel/core@7.29.6)
       dom-element-descriptors: 0.5.1
     transitivePeerDependencies:
       - '@babel/core'
-      - '@glint/template'
       - supports-color
 
-  '@ember/test-waiters@4.1.0(@babel/core@7.29.6)':
+  '@ember/test-waiters@4.1.2':
     dependencies:
-      '@embroider/addon-shim': 1.10.2
-      '@embroider/macros': 1.20.5(@babel/core@7.29.6)
+      '@embroider/addon-shim': 1.10.3
     transitivePeerDependencies:
-      - '@babel/core'
-      - '@glint/template'
       - supports-color
 
   '@embroider/addon-shim@1.10.0':
@@ -8689,13 +8681,6 @@ snapshots:
     dependencies:
       mimic-response: 1.0.1
 
-  decorator-transforms@2.3.0(@babel/core@7.29.6):
-    dependencies:
-      '@babel/plugin-syntax-decorators': 7.27.1(@babel/core@7.29.6)
-      babel-import-util: 3.0.1
-    transitivePeerDependencies:
-      - '@babel/core'
-
   decorator-transforms@2.4.0(@babel/core@7.29.6):
     dependencies:
       '@babel/core': 7.29.6
@@ -9217,9 +9202,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@9.0.4(@babel/core@7.29.6)(@ember/test-helpers@5.4.1(@babel/core@7.29.6))(qunit@2.26.0):
+  ember-qunit@9.0.4(@babel/core@7.29.6)(@ember/test-helpers@5.4.3(@babel/core@7.29.6))(qunit@2.26.0):
     dependencies:
-      '@ember/test-helpers': 5.4.1(@babel/core@7.29.6)
+      '@ember/test-helpers': 5.4.3(@babel/core@7.29.6)
       '@embroider/addon-shim': 1.10.0
       '@embroider/macros': 1.20.5(@babel/core@7.29.6)
       qunit: 2.26.0
