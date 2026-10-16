@@ -1,0 +1,4 @@
+allowBuilds:
+  core-js: false
+overrides:
+  string-width: ^4.2.0
