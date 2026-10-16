@@ -1,87 +1,87 @@
 # ember-octicons
 
-[![Ember CI](https://github.com/kpfefferle/ember-octicons/workflows/Ember%20CI/badge.svg)](https://github.com/kpfefferle/ember-octicons/actions)
+> [!WARNING]
+> **This addon is deprecated and no longer maintained.** Modern Ember apps can use [`@primer/octicons`](https://www.npmjs.com/package/@primer/octicons) directly, without an addon. See [Migrating](#migrating) below.
 
-[![Ember Observer Score](https://emberobserver.com/badges/ember-octicons.svg)](https://emberobserver.com/addons/ember-octicons)
+ember-octicons was a build-time shim for classic Ember CLI builds. It copied Octicon SVG files into your app's assets with `app.import` and added Octicons' CSS to `vendor.css`. Embroider and Vite let apps import package assets directly, so the addon no longer adds anything.
 
-Easily import [GitHub Primer/Octicons](https://primer.style/octicons/) into an Ember application's build.
+Apps that already use ember-octicons 4.0.0 will keep working, but the addon will not get further updates. Its original documentation is in the [v4.0.0 README](https://github.com/kpfefferle/ember-octicons/blob/v4.0.0/README.md).
 
-## Usage
+## Migrating
 
-In your ember-cli project, run:
+Remove the addon and depend on `@primer/octicons` directly:
 
 ```sh
-ember install ember-octicons
+npm uninstall ember-octicons
+npm install --save-dev @primer/octicons
 ```
 
-When the addon is installed, it will add the `octicons` NPM dependency to your project.
-
-### Importing SVG Icons
-
-To import Octicon SVGs as build time assets, add an `octicons` configuration object to the options set in `ember-cli-build.js`. Within the `octicons` object, define an `icons` property containing an array of Octicon names. If no icons are specified, then all Octicon SVGs will be imported into your project.
-
-```js
-// ember-cli-build.js
-let app = new EmberAddon(defaults, {
-  octicons: {
-    icons: ["alert", "bell", "mark-github" /* etc... */],
-  },
-});
-```
-
-Now the SVG file can be used like any other asset:
-
-```hbs
-<img src="images/svg/octicons/mark-github-16.svg" class="octicon" />
-```
-
-By default, SVG files will be imported into the `images/svg/octicons` directory. To customize the import destination, set a `destDir` in the `octicons` config:
-
-```js
-// ember-cli-build.js
-let app = new EmberAddon(defaults, {
-  octicons: {
-    destDir: "some/other/folder",
-    icons: ["alert", "bell", "mark-github" /* etc... */],
-  },
-});
-```
-
-### Using Octicons with Ember SVGJar
-
-If you would rather use [ember-svg-jar](https://github.com/ivanvotti/ember-svg-jar) to embed your SVG icons, install ember-svg-jar and add the following configuration to your `ember-cli-build.js`:
-
-```js
-// ember-cli-build.js
-let app = new EmberAddon(defaults, {
-  octicons: {
-    icons: null, // don't import any SVG files at build time
-  },
-  svgJar: {
-    sourceDirs: [
-      "public", // default SVGJar lookup directory
-      "node_modules/@primer/octicons/build/svg",
-    ],
-  },
-});
-```
-
-And then use Ember SVGJar's `{{svg-jar}}` helper:
-
-```hbs
-{{svg-jar "mark-github-16" class="octicon"}}
-```
+Remove the `octicons` options from `ember-cli-build.js`, then follow the steps below for the features you used.
 
 ### CSS
 
-By default, the addon will add Octicons' normalizing CSS to your project's `vendor.css`. If you are not linking to `vendor.css` in your project's `index.html`, you can manually import the normalizing CSS into your application CSS instead:
+The addon added Octicons' CSS to `vendor.css`. Import it from your app's entry point instead:
 
-```scss
-// app/styles/app.scss
-@import "octicons";
+```js
+// app/app.js
+import "@primer/octicons/build/build.css";
 ```
 
-```css
-/* app/styles/app.css */
-@import "octicons.css";
+This works in Vite apps and in classic apps that use ember-auto-import. In a classic build, you can also keep it in `vendor.css`:
+
+```js
+// ember-cli-build.js
+app.import("node_modules/@primer/octicons/build/build.css");
 ```
+
+If you imported `octicons.css` from your own stylesheet, import `@primer/octicons/build/build.css` there instead.
+
+### Inline SVG
+
+To render icons inline, use a small component built on the `toSVG()` function in `@primer/octicons`:
+
+```gjs
+// app/components/octicon.gjs
+import { htmlSafe } from "@ember/template";
+import octicons from "@primer/octicons";
+
+function octicon(name, size, label) {
+  const options = {};
+  if (size) options.width = size;
+  if (label) options["aria-label"] = label;
+  return htmlSafe(octicons[name].toSVG(options));
+}
+
+<template>{{octicon @name @size @label}}</template>
+```
+
+```gjs
+<Octicon @name="alert" />
+<Octicon @name="mark-github" @size="24" @label="GitHub" />
+```
+
+Icons render with the `octicon` class. Pass `@size="24"` to use the 24px version of an icon. If you don't pass `@label`, the icon gets `aria-hidden="true"`; if you do, it gets `role="img"`.
+
+`@primer/octicons` contains every icon (about 1 MB of icon data before compression), and all of it goes into your bundle. If you only use a few icons, use one of the methods below instead.
+
+### SVG files (`<img>` tags)
+
+Replaces the addon's `octicons.icons` option.
+
+In a Vite or Embroider app, import an icon file to get its URL. Only the icons you import are added to the build:
+
+```gjs
+import githubIcon from "@primer/octicons/build/svg/mark-github-16.svg";
+
+<template><img src={{githubIcon}} class="octicon" alt="GitHub" /></template>
+```
+
+Classic builds can't import SVG files from JavaScript without extra webpack configuration. Use the component above or ember-svg-jar instead.
+
+### ember-svg-jar
+
+If you used ember-octicons with [ember-svg-jar](https://github.com/ivanvotti/ember-svg-jar), you only need to remove `ember-octicons`. Keep the ember-svg-jar `sourceDirs` setting that points at `node_modules/@primer/octicons/build/svg`, and keep calling `{{svg-jar "mark-github-16" class="octicon"}}`.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
