@@ -18,12 +18,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v7
-      - name: Install Node
-        uses: volta-cli/action@v5
-        with:
-          node-version: 20
-      - name: Install pnpm
-        run: volta install pnpm@10
+      - name: Install Node and pnpm
+        uses: jdx/mise-action@v5
       - name: Install Dependencies
         run: pnpm install
       - name: Lint
@@ -38,12 +34,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v7
-      - name: Install Node
-        uses: volta-cli/action@v5
-        with:
-          node-version: 20
-      - name: Install pnpm
-        run: volta install pnpm@10
+      - name: Install Node and pnpm
+        uses: jdx/mise-action@v5
       - name: Install Dependencies
         run: pnpm install --no-lockfile
       - name: Run Tests
@@ -68,12 +60,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v7
-      - name: Install Node
-        uses: volta-cli/action@v5
-        with:
-          node-version: 20
-      - name: Install pnpm
-        run: volta install pnpm@10
+      - name: Install Node and pnpm
+        uses: jdx/mise-action@v5
       - name: Install Dependencies
         run: pnpm install
       - name: Run Tests

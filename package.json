@@ -89,9 +89,6 @@
     "stylelint-config-standard": "^40.0.0",
     "webpack": "^5.103.0"
   },
-  "resolutions": {
-    "string-width": "^4.2.0"
-  },
   "engines": {
     "node": ">= 20.11"
   },
@@ -100,9 +97,5 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "volta": {
-    "node": "20.19.2",
-    "pnpm": "10.11.0"
   }
 }

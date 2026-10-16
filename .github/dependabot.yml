@@ -5,6 +5,9 @@ updates:
     schedule:
       interval: "daily"
       time: "07:00"
+    # pnpm refuses to install packages published less than 24 hours ago
+    cooldown:
+      default-days: 2
     groups:
       babel:
         applies-to: version-updates
