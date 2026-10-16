@@ -100,9 +100,5 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "volta": {
-    "node": "20.19.2",
-    "pnpm": "10.11.0"
   }
 }
