@@ -1,7 +1,7 @@
 {
   "name": "ember-octicons",
   "version": "4.0.0",
-  "description": "Easily add GitHub Primer/Octicons to your Ember project.",
+  "description": "DEPRECATED: use @primer/octicons directly. Easily add GitHub Primer/Octicons to your Ember project.",
   "keywords": [
     "ember-addon",
     "octicons",
